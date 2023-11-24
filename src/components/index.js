@@ -7,6 +7,8 @@ import MovingSlider from './MovingSlider/MovingSlider';
 import LinerHead from './LinerHead/LinerHead';
 import BookSection from './BookSection/BookSection';
 import Overview from './Overview/Overview';
+import DetailOverview from './DetailOverview/DetailOverview';
+import HireSection from './HireSection/HireSection';
 
 export {
   Header,
@@ -18,4 +20,6 @@ export {
   LinerHead,
   BookSection,
   Overview,
+  DetailOverview,
+  HireSection,
 };

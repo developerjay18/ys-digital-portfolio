@@ -1,4 +1,5 @@
 import Logo from './logo.svg';
-import OverviewImg from "./overview-image.jpg"
+import OverviewImg from './overview-image.jpg';
+import VisitingCard from './visiting-card.png';
 
-export { Logo,OverviewImg };
+export { Logo, OverviewImg, VisitingCard };
