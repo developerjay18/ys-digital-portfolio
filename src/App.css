@@ -1,0 +1,5 @@
+.bg-gradient {
+    background-image: url('./assets/backgrounds/black-gradient.svg');
+    background-size: cover;
+    background-position: center;
+  }

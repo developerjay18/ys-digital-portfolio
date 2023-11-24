@@ -1,7 +1,12 @@
+import React from 'react';
+import { Header, HeroSection, Footer } from './components';
+import { Outlet } from 'react-router-dom';
+import './App.css';
+
 function App() {
   return (
     <>
-      <h1 className="font-poppins text-red text-center py-10">App Verified successfully... <br /> building under process..</h1>
+      <Outlet />
     </>
   );
 }
