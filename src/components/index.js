@@ -5,6 +5,8 @@ import Container from './Container/Container';
 import Button from './Button';
 import MovingSlider from './MovingSlider/MovingSlider';
 import LinerHead from './LinerHead/LinerHead';
+import BookSection from './BookSection/BookSection';
+import Overview from './Overview/Overview';
 
 export {
   Header,
@@ -14,4 +16,6 @@ export {
   Button,
   MovingSlider,
   LinerHead,
+  BookSection,
+  Overview,
 };

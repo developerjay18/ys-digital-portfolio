@@ -1,3 +1,5 @@
+import * as Image from '.././assets/certificate-logos/index';
+
 const navLinks = [
   {
     name: 'home',
@@ -21,4 +23,19 @@ const navLinks = [
   },
 ];
 
-export { navLinks };
+const logos = [
+  { slug: Image.Amazon },
+  { slug: Image.ADSM },
+  { slug: Image.Google },
+  { slug: Image.GS },
+  { slug: Image.HS },
+  { slug: Image.HubSpot },
+  { slug: Image.Insta },
+  { slug: Image.Meta },
+  { slug: Image.SR },
+  { slug: Image.SD },
+  { slug: Image.Udemy },
+  { slug: Image.YT },
+];
+
+export { navLinks, logos };

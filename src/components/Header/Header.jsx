@@ -10,7 +10,7 @@ function Header() {
         {/* offer bar */}
         <div className="offerbar capitalize bg-black text-white flex justify-center items-center py-2 text-lg gap-10 mt-5">
           <span>grab your 7 day free trial : valid only for next 3 days</span>
-          <button className="bg-lightGrey text-black p-1 px-2 rounded-full hover:shadow-lg hover:shadow-red">
+          <button className="bg-lightGrey text-black p-1 px-2 rounded-full hover:shadow-lg hover:shadow-red capitalize">
             claim now
           </button>
         </div>
