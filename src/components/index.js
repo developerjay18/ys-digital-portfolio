@@ -12,6 +12,11 @@ import HireSection from './HireSection/HireSection';
 import PointsSection from './PointsSection/PointsSection';
 import StatsSection from './StatsSection.jsx/StatsSection';
 import ProcessSection from './ProcessSection/ProcessSection';
+import CaseStudySec from './CaseStudySec/CaseStudySec';
+import Testimonials from './Testimonials/Testimonials';
+import IntroSection from './IntroSection/IntroSection';
+import Banner from './Banner';
+import ContactSection from './ContactSection/ContactSection';
 
 export {
   Header,
@@ -28,4 +33,9 @@ export {
   PointsSection,
   StatsSection,
   ProcessSection,
+  CaseStudySec,
+  Testimonials,
+  IntroSection,
+  Banner,
+  ContactSection
 };

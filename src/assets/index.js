@@ -11,6 +11,12 @@ import StraightArrow from './straight-arrow.svg';
 import S1 from './s-1.png';
 import S2 from './s-2.png';
 import S3 from './s-3.png';
+import Astro from './astro.png';
+import Befikr from './befikr.png';
+import Clinic from './clinic.png';
+import Cosm from './csom.png';
+import A from './aaa.png';
+import IntroImg from "./image-4.jpg"
 
 export {
   Logo,
@@ -26,4 +32,10 @@ export {
   S1,
   S2,
   S3,
+  Astro,
+  Befikr,
+  Clinic,
+  A,
+  Cosm,
+  IntroImg
 };

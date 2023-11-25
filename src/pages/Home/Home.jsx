@@ -11,6 +11,11 @@ import {
   PointsSection,
   StatsSection,
   ProcessSection,
+  CaseStudySec,
+  Testimonials,
+  IntroSection,
+  Banner,
+  ContactSection
 } from '../../components';
 import { logos } from '../../components/data';
 
@@ -19,7 +24,7 @@ function Home() {
     <Container>
       <Header />
       <HeroSection />
-      <MovingSlider imgLinks={logos} />
+      <MovingSlider imgLinks={logos} heading={'Worked with'} />
       <BookSection />
       <Overview />
       <DetailOverview />
@@ -27,6 +32,12 @@ function Home() {
       <PointsSection />
       <StatsSection />
       <ProcessSection />
+      <CaseStudySec />
+      <Testimonials />
+      <MovingSlider imgLinks={logos} heading={'Internationally certified'} />
+      <IntroSection />
+      <Banner/>
+      <ContactSection/>
     </Container>
   );
 }
