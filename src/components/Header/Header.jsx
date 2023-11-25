@@ -1,11 +1,11 @@
 import React from 'react';
 import { Logo } from '../../assets';
 import { navLinks } from '../data';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="">
+    <header className="z-20">
       <div className="mx-auto">
         {/* offer bar */}
         <div className="offerbar capitalize bg-black text-white flex justify-center items-center py-2 text-lg gap-10 mt-5">
@@ -17,9 +17,15 @@ function Header() {
         {/* main-header */}
         <div className="main-header px-5 lg:px-0 container mx-auto flex justify-between items-center py-4">
           {/* --logo-container */}
-          <div className="logo w-[5%]">
-            <img src={Logo} alt="logo" className="bg-black rounded-full p-1" />
-          </div>
+          <Link to={"/"} className='w-[5%]'>
+            <div className="logo w-full">
+              <img
+                src={Logo}
+                alt="logo"
+                className="bg-black rounded-full p-1"
+              />
+            </div>
+          </Link>
           {/* --links-container */}
           <div className="links text-lg">
             <ul className="flex gap-8">

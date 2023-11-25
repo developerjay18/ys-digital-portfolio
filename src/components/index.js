@@ -9,6 +9,9 @@ import BookSection from './BookSection/BookSection';
 import Overview from './Overview/Overview';
 import DetailOverview from './DetailOverview/DetailOverview';
 import HireSection from './HireSection/HireSection';
+import PointsSection from './PointsSection/PointsSection';
+import StatsSection from './StatsSection.jsx/StatsSection';
+import ProcessSection from './ProcessSection/ProcessSection';
 
 export {
   Header,
@@ -22,4 +25,7 @@ export {
   Overview,
   DetailOverview,
   HireSection,
+  PointsSection,
+  StatsSection,
+  ProcessSection,
 };

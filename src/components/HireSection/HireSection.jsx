@@ -1,24 +1,24 @@
 import React from 'react';
-import { VisitingCard } from '../../assets';
+import { VisitingCard ,FeatherImg} from '../../assets';
 import { LinerHead, Button } from '../index';
 
 function HireSection() {
   return (
     <div className="bg-gradient">
-      <div className="container px-5 lg:px-0 mx-auto py-1 text-white">
+      <div className="container px-5 lg:px-0 mx-auto text-white max-h-[98vh] overflow-hidden">
         {/* upper  */}
         <div className="upper h-[35vh] w-[60%] ml-auto overflow-hidden">
           <img
             src={VisitingCard}
             alt="visiting-card"
-            className="w-[70%] rotate-[10deg] ml-auto mr-20 -mt-[9.3rem] hover:shadow-lg hover:shadow-red cursor-pointer"
+            className="w-[50%] rotate-[12deg] ml-auto mr-[4rem] -mt-[6.8rem] cursor-pointer shadow-lg shadow-black"
           />
         </div>
         {/* middle  */}
-        <div className="middle flex py-20">
+        <div className="middle flex py-10 pl-20">
           <div className="left w-1/2">
             <LinerHead lineClassName={`w-[40%] bg-white`}>
-              still not convienced?
+              <span className='capitalize text-md'>still not convinced?</span>
             </LinerHead>
           </div>
           <div className="right w-1/2 flex flex-col gap-5">
@@ -29,6 +29,9 @@ function HireSection() {
           </div>
         </div>
         {/* lower */}
+        <div className="lower pl-20 w-[40%] max-h-full overflow-hidden">
+          <img src={FeatherImg} alt="image" className='shadow-lg shadow-black'/>
+        </div>
       </div>
     </div>
   );

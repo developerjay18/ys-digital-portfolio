@@ -1,12 +1,18 @@
 import React from 'react';
 import { LinerHead, Button } from '../index';
-import { OverviewImg } from '../../assets';
+import { OverviewImg, HeroCircle } from '../../assets';
 
 function Overview() {
   return (
-    <>
-      <div className="container px-5 lg:px-0 mx-auto py-10 flex flex-col">
-        <div className="flex">
+    <div className="bg-[#ffffff]">
+      <div className="container px-5 lg:px-0 mx-auto py-16 flex flex-col relative">
+        {/* others */}
+        <img
+          src={HeroCircle}
+          alt="circle"
+          className="absolute top-0 w-[50%] right-0"
+        />
+        <div className="flex z-10">
           {/* left section  */}
           <div className="left w-1/2">
             <LinerHead lineClassName={`w-[50%] bg-black`}>overview</LinerHead>
@@ -30,7 +36,7 @@ function Overview() {
       <div className="image">
         <img src={OverviewImg} alt="overview-img" />
       </div>
-    </>
+    </div>
   );
 }
 

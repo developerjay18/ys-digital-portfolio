@@ -4,15 +4,17 @@ import { VisitingCard } from '../../assets';
 
 function DetailOverview() {
   return (
-    <div className="container px-5 lg:px-0 mx-auto py-10 flex max-h-[120vh] overflow-hidden">
+    <div className="container px-5 lg:px-0 mx-auto py-10 flex max-h-[137vh] overflow-hidden">
       {/* left section  */}
-      <div className="left w-[40%]">
+      <div className="left w-[40%] pl-[7rem]">
         <LinerHead lineClassName={`w-[50%] bg-black`}>overview</LinerHead>
       </div>
       {/* right section  */}
       <div className="right w-[60%] flex flex-col gap-8">
-        <h1 className="text-5xl font-bold">why digital marketing?</h1>
-        <div className="flex gap-7">
+        <div className="">
+          <h1 className="text-5xl font-bold">Why its important? </h1>
+        </div>
+        <div className="flex gap-7 w-[75%]">
           {/* inner-left  */}
           <div className="inner-left w-1/2 flex flex-col gap-5">
             <p className="text-lg">
@@ -26,7 +28,6 @@ function DetailOverview() {
               most likely to be interested in what you offer. It&apos;s like
               sending out flyers, but only to folks who really care.
             </p>
-            <p className="font-bold">YSH</p>
           </div>
           {/* inner-right  */}
           <div className="inner-right w-1/2 flex flex-col gap-5">
@@ -46,11 +47,11 @@ function DetailOverview() {
           </div>
         </div>
         {/* --lower */}
-        <div className="lower flex justify-end items-end mt-20 w-[70%] ml-auto mr-20">
+        <div className="lower flex justify-end items-end mt-[5.5rem] w-[50%] ml-auto mr-16">
           <img
             src={VisitingCard}
             alt="visiting-card"
-            className="rotate-[10deg]"
+            className="rotate-[12deg] shadow-lg shadow-black"
           />
         </div>
       </div>
