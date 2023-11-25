@@ -7,7 +7,10 @@ import {
   BookSection,
   Overview,
   DetailOverview,
-  HireSection
+  HireSection,
+  PointsSection,
+  StatsSection,
+  ProcessSection,
 } from '../../components';
 import { logos } from '../../components/data';
 
@@ -21,6 +24,9 @@ function Home() {
       <Overview />
       <DetailOverview />
       <HireSection />
+      <PointsSection />
+      <StatsSection />
+      <ProcessSection />
     </Container>
   );
 }
