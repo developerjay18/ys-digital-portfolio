@@ -12,13 +12,13 @@ function IntroSection() {
             let&apos; talk about me
           </h1>
           <div className="w-full flex items-center gap-5">
-            <span className="w-[50%] h-1 bg-black block"></span>
+            <span className="w-[50%] h-[1px] bg-black block"></span>
             <span className="capitalize text-4xl font-semibold">
               a small intro
             </span>
           </div>
         </div>
-        <div className="text-xl flex flex-col gap-10 pr-14">
+        <div className="text-xl flex flex-col gap-8 pr-14">
           <p>From Running a Clothes Shop to Doing Digital Marketing:</p>
           <p>
             Back in 11th and 12th grade, my family and I started a clothes
@@ -37,12 +37,15 @@ function IntroSection() {
             now I&apos;m helping other businesses make sales and grow using
             digital marketing.
           </p>
+          <p>
+            schedule a call with me to get a free consultation for your business.
+          </p>
         </div>
         <div className="">
           <Button
-            className={`bg-red text-white py-3 px-8 shadow-lg shadow-black`}
+            className={`bg-red text-white py-3 px-8`}
           >
-            whatsapp now
+            schedule a call
           </Button>
         </div>
       </div>

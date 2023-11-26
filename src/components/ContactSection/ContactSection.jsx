@@ -1,58 +1,88 @@
 import React from 'react';
-import { IntroImg } from '../../assets';
+import { Call, Email } from '../../assets';
 
 function ContactSection() {
   return (
-    <div className="container px-5 lg:px-0 mx-auto py-10 flex h-[85vh]  overflow-hidden mb-10">
+    <div className="container px-5 lg:px-0 mx-auto py-10 flex">
       {/* left  */}
-      <div className="left h-[85vh] w-1/2 flex flex-col gap-6 justify-center items-center">
-        <h2 className="capitalize text-6xl text-left w-full font-bold">
-          contact form
-        </h2>
-        <div className="form w-full">
-          <form action="" className="w-full flex flex-col gap-5">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              className="capitalize p-2 w-full bg-transparent"
-              placeholder="your name"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="capitalize p-2 w-full bg-transparent"
-              placeholder="your email"
-            />
-            <input
-              type="text"
-              name="number"
-              id="number"
-              className="capitalize p-2 w-full bg-transparent"
-              placeholder="your phone number"
-            />
-            <textarea
-              name="msg"
-              id="msg"
-              cols="20"
-              rows="5"
-              value={`your message`}
-              className="capitalize p-2 w-full bg-transparent"
-            ></textarea>
-            <button
-              type="submit"
-              className="capitalize text-xl w-[50%] bg-red text-white py-3 px-8"
-            >
-              submit
-            </button>
-          </form>
+      <div className="left w-1/2 flex flex-col gap-5">
+        <h4 className="text-2xl">Want to work with me?</h4>
+        <h1 className="text-5xl font-bold">Drop Me A Message</h1>
+        <p className="text-xl pr-10">
+          I look forward to collaborating with you soon! Kindly send an email
+          with your information, and I will reach out for additional
+          discussions.
+        </p>
+        <div className="wrapper flex flex-col gap-3">
+          <div className="phone flex items-center  gap-4">
+            <div className="w-[5%]">
+              <img src={Call} alt="icon" />
+            </div>
+            <div className="">+91 99248 94090</div>
+          </div>
+          <div className="email flex items-center gap-4">
+            <div className="w-[5%]">
+              <img src={Email} alt="icon" />
+            </div>
+            <div className="">contactyash2004@gmail.com</div>
+          </div>
         </div>
       </div>
       {/* right  */}
       <div className="right w-1/2">
-        <div className="w-[80%] ml-auto">
-          <img src={IntroImg} alt="image" />
+        <div className="">
+          <form action="" className="flex flex-col gap-4">
+            <div className="flex flex-col">
+              <label htmlFor="your name" className="capitalize text-xl">
+                your name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="your email" className="capitalize text-xl">
+                your email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="your phone" className="capitalize text-xl">
+                your phone
+              </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="your msg" className="capitalize text-xl">
+                your message
+              </label>
+              <input
+                type="text"
+                name="msg"
+                id="msg"
+                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+              />
+            </div>
+            <button
+              type="submit"
+              className="bg-red text-white py-3 px-8 capitalize w-[30%] hover:bg-[#CA0606] mt-6"
+            >
+              submit
+            </button>
+          </form>
         </div>
       </div>
     </div>

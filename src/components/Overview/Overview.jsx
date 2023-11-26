@@ -1,21 +1,21 @@
 import React from 'react';
 import { LinerHead, Button } from '../index';
-import { OverviewImg, HeroCircle } from '../../assets';
+import { OverviewImg, OverviewCircle } from '../../assets';
 
 function Overview() {
   return (
-    <div className="bg-[#ffffff]">
+    <div className="bg-[#ffffff] relative">
+      {/* others */}
+      <img
+        src={OverviewCircle}
+        alt="circle"
+        className="absolute top-0 w-full right-0"
+      />
       <div className="container px-5 lg:px-0 mx-auto py-16 flex flex-col relative">
-        {/* others */}
-        <img
-          src={HeroCircle}
-          alt="circle"
-          className="absolute top-0 w-[50%] right-0"
-        />
-        <div className="flex z-10">
+        <div className="flex z-10 py-10">
           {/* left section  */}
-          <div className="left w-1/2">
-            <LinerHead lineClassName={`w-[50%] bg-black`}>overview</LinerHead>
+          <div className="left w-[40%]">
+            <LinerHead lineClassName={`w-[40%] bg-black`}>overview</LinerHead>
           </div>
           {/* right section  */}
           <div className="right w-1/2 flex flex-col gap-5">
@@ -25,9 +25,7 @@ function Overview() {
               reach, and connect with more customers, a consultation with Yash
               Sharma might be the perfect solution for you.
             </p>
-            <Button
-              className={`bg-red py-3 px-7 text-white shadow-md shadow-black hover:shadow-red`}
-            >
+            <Button className={`bg-red py-3 px-7 text-white`}>
               book meeting now
             </Button>
           </div>

@@ -1,5 +1,5 @@
 import * as Image from '.././assets/certificate-logos/index';
-import { Astro, Befikr, A, Cosm, Clinic } from '../assets';
+import { Astro, Befikr, A, Cosm, Clinic, LD, Insta, FB, WP } from '../assets';
 
 const navLinks = [
   {
@@ -133,4 +133,23 @@ const caseStudies = [
   },
 ];
 
-export { navLinks, logos, caseStudies };
+const socialLinks = [
+  {
+    imgUrl: LD,
+    url: 'https://www.linkedin.com/in/yashsharmadigital',
+  },
+  {
+    imgUrl: Insta,
+    url: 'https://instagram.com/yashsharma.digital',
+  },
+  {
+    imgUrl: FB,
+    url: 'https://www.facebook.com/yashsharma.digital',
+  },
+  {
+    imgUrl: WP,
+    url: 'https://wa.me/919924894090',
+  },
+];
+
+export { navLinks, logos, caseStudies,socialLinks };

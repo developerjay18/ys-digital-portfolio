@@ -5,7 +5,7 @@ function Button({ children, className, link }) {
   return (
     <Link to={link}>
       <button
-        className={`${className} uppercase text-lg hover:shadow-lg hover:shadow-red`}
+        className={`${className} uppercase text-md hover:bg-[#CA0606] hover:text-white`}
       >
         {children}
       </button>

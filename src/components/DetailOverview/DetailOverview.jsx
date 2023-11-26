@@ -6,8 +6,8 @@ function DetailOverview() {
   return (
     <div className="container px-5 lg:px-0 mx-auto py-10 flex max-h-[137vh] overflow-hidden">
       {/* left section  */}
-      <div className="left w-[40%] pl-[7rem]">
-        <LinerHead lineClassName={`w-[50%] bg-black`}>overview</LinerHead>
+      <div className="left w-[40%]">
+        <LinerHead lineClassName={`w-[40%] bg-black`}>overview</LinerHead>
       </div>
       {/* right section  */}
       <div className="right w-[60%] flex flex-col gap-8">

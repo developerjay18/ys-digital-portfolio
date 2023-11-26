@@ -25,7 +25,7 @@ function HireSection() {
             <h1 className="text-4xl font-bold">
               Don&apos;t worry see my results.
             </h1>
-            <Button className={`bg-red py-3 px-7 text-white`}>Hire yash</Button>
+            <Button className={`bg-red py-3 px-7 text-white`}>Hire yash sharma</Button>
           </div>
         </div>
         {/* lower */}

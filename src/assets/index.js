@@ -5,7 +5,7 @@ import HeroImg from './hero-image.svg';
 import HeroCircle from './home-circ.png';
 import RightArrow from './hero-arrow-right.svg';
 import LeftArrow from './hero-arrow-left.svg';
-import OverviewCircle from './shapes/overview-circle.svg';
+import OverviewCircle from './overview-circle.png';
 import FeatherImg from './image-3.jpg';
 import StraightArrow from './straight-arrow.svg';
 import S1 from './s-1.png';
@@ -16,8 +16,14 @@ import Befikr from './befikr.png';
 import Clinic from './clinic.png';
 import Cosm from './csom.png';
 import A from './aaa.png';
-import IntroImg from "./image-4.jpg"
-import FooterImg from "./footer.png"
+import IntroImg from './image-4.jpeg';
+import FooterImg from './footer.png';
+import Call from './call.png';
+import Email from './email.png';
+import FB from './fb.png';
+import WP from './whatsapp.png';
+import LD from './linkedin.png';
+import Insta from './insta.png';
 
 export {
   Logo,
@@ -39,5 +45,11 @@ export {
   A,
   Cosm,
   IntroImg,
-  FooterImg
+  FooterImg,
+  Call,
+  Email,
+  FB,
+  WP,
+  LD,
+  Insta,
 };

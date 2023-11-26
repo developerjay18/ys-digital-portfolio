@@ -13,16 +13,14 @@ function BookSection() {
         {/* right side  */}
         <div className="right w-1/2 flex justify-center flex-col gap-7">
           <h1 className="text-7xl font-bold leading-[5rem] capitalize">
-           lead generation for astrologers
+            facebook ads guide
           </h1>
           <p className="text-lg pr-10">
             If you want to make more money and need a simple guide on how to run
             Facebook ads, just grab this FREE guide and start running your own
             ads.
           </p>
-          <Button
-            className={`bg-red py-3 px-7 text-white shadow-md shadow-black hover:shadow-red`}
-          >
+          <Button className={`bg-red py-3 px-7 text-white`}>
             download now
           </Button>
         </div>
