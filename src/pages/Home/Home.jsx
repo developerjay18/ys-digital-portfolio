@@ -15,7 +15,8 @@ import {
   Testimonials,
   IntroSection,
   Banner,
-  ContactSection
+  ContactSection,
+  Footer
 } from '../../components';
 import { logos } from '../../components/data';
 
@@ -38,6 +39,7 @@ function Home() {
       <IntroSection />
       <Banner/>
       <ContactSection/>
+      <Footer/>
     </Container>
   );
 }

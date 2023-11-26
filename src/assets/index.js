@@ -17,6 +17,7 @@ import Clinic from './clinic.png';
 import Cosm from './csom.png';
 import A from './aaa.png';
 import IntroImg from "./image-4.jpg"
+import FooterImg from "./footer.png"
 
 export {
   Logo,
@@ -37,5 +38,6 @@ export {
   Clinic,
   A,
   Cosm,
-  IntroImg
+  IntroImg,
+  FooterImg
 };

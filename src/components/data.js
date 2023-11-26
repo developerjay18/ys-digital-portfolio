@@ -57,6 +57,7 @@ const caseStudies = [
       number: '150+',
       value: 'Daily Inquiries',
     },
+    bgColor: 'bg-black text-white',
   },
   {
     imgUrl: Cosm,
@@ -74,6 +75,7 @@ const caseStudies = [
       number: '15+ High-ticket',
       value: 'Treatment',
     },
+    bgColor: 'bg-white text-black',
   },
   {
     imgUrl: Befikr,
@@ -91,6 +93,7 @@ const caseStudies = [
       number: '60+',
       value: 'Client Closes',
     },
+    bgColor: 'bg-black text-white',
   },
   {
     imgUrl: Clinic,
@@ -108,6 +111,7 @@ const caseStudies = [
       number: '20+ client',
       value: 'Converted',
     },
+    bgColor: 'bg-white text-black',
   },
   {
     imgUrl: A,
@@ -125,6 +129,7 @@ const caseStudies = [
       number: '150+',
       value: 'Product Sold',
     },
+    bgColor: 'bg-black text-white',
   },
 ];
 

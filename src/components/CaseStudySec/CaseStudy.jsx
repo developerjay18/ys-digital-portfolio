@@ -2,9 +2,9 @@ import React from 'react';
 import { LinerHead } from '../index';
 import { Astro } from '../../assets';
 
-function CaseStudy({ imgUrl, title, description, stat1, stat2, stat3 }) {
+function CaseStudy({ imgUrl, title, description, stat1, stat2, stat3, bgColor}) {
   return (
-    <div className="flex text-white justify-between">
+    <div className={`flex ${bgColor} justify-between`}>
       {/* left  */}
       <div className="left w-[40%]">
         <div className="w-full">
