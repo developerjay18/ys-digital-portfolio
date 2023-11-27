@@ -1,5 +1,5 @@
 import * as Image from '.././assets/certificate-logos/index';
-import { Astro, Befikr, A, Cosm, Clinic, LD, Insta, FB, WP } from '../assets';
+import { Astro, Befikr, A, Cosm, Clinic } from '../assets';
 
 const navLinks = [
   {

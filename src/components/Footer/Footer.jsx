@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterImg, FB, Insta, LD, WP } from '../../assets';
+import { FooterImg } from '../../assets';
 import { Link } from 'react-router-dom';
 import { socialLinks } from '../data';
 
@@ -32,7 +32,7 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div className="copyright w-1/3 border">
+          <div className="copyright w-1/3">
             <div className="upper flex gap-1 justify-end">
               <span>Developed by</span>
               <span>
@@ -40,7 +40,7 @@ function Footer() {
               </span>
             </div>
             <div className="lower capitalize text-right">
-              copyright @2023 All rights reserved.
+              copyright @2023 All rights reserved
             </div>
           </div>
         </div>

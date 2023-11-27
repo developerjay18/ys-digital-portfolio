@@ -20,10 +20,6 @@ import IntroImg from './image-4.jpeg';
 import FooterImg from './footer.png';
 import Call from './call.png';
 import Email from './email.png';
-import FB from './fb.png';
-import WP from './whatsapp.png';
-import LD from './linkedin.png';
-import Insta from './insta.png';
 
 export {
   Logo,
@@ -48,8 +44,4 @@ export {
   FooterImg,
   Call,
   Email,
-  FB,
-  WP,
-  LD,
-  Insta,
 };
