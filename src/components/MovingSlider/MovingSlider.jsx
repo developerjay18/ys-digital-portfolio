@@ -1,16 +1,50 @@
 import React from 'react';
-import { LinerHead } from '../index';
+import * as Img from '../../assets/certificate-logos';
 
-function MovingSlider({ heading, items, imgLinks }) {
-  console.log(imgLinks);
+function MovingSlider() {
   return (
-    <div className="bg-gradient w-full flex py-10 mx-auto text-white flex-col gap-5">
-      {/* heading  */}
-      <div className="heading container px-5 lg:px-0 mx-auto">
-        <LinerHead lineClassName={` w-[30%] bg-white`}>{heading}</LinerHead>
+    <div className="pt-5 slider bg-black blurred-div">
+      <div className="slide-track">
+        <div className="slide">
+          <img className='border bg-black' src={Img.ADSM} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.Amazon} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.GS} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.Google} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.HS} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.HubSpot} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.Insta} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.Meta} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.ADSM} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.SD} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.SR} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.Udemy} alt="image" />
+        </div>
+        <div className="slide">
+          <img className='border bg-black' src={Img.YT} alt="image" />
+        </div>
       </div>
-      {/* slider  */}
-      <h1 className="border">section pending....</h1>
     </div>
   );
 }

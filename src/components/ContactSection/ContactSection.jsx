@@ -40,7 +40,7 @@ function ContactSection() {
                 type="text"
                 name="name"
                 id="name"
-                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+                className="bg-[#fff] border-b-[1px] pt-1 mt-3"
               />
             </div>
             <div className="flex flex-col">
@@ -51,7 +51,7 @@ function ContactSection() {
                 type="email"
                 name="email"
                 id="email"
-                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+                className="bg-[#fff] border-b-[1px] pt-1 mt-3"
               />
             </div>
             <div className="flex flex-col">
@@ -62,7 +62,7 @@ function ContactSection() {
                 type="text"
                 name="phone"
                 id="phone"
-                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+                className="bg-[#fff] border-b-[1px] pt-1 mt-3"
               />
             </div>
             <div className="flex flex-col">
@@ -73,7 +73,7 @@ function ContactSection() {
                 type="text"
                 name="msg"
                 id="msg"
-                className="bg-[#f2f2f2] border-b-[1px] pt-1 mt-3"
+                className="bg-[#fff] border-b-[1px] pt-1 mt-3"
               />
             </div>
             <button
