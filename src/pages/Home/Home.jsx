@@ -16,16 +16,16 @@ import {
   IntroSection,
   Banner,
   ContactSection,
-  Footer
+  Footer,
 } from '../../components';
-import { logos } from '../../components/data';
+import { logos, companies } from '../../components/data';
 
 function Home() {
   return (
     <Container>
       <Header />
       <HeroSection />
-      <MovingSlider imgLinks={logos} heading={'Worked with'} />
+      <MovingSlider links={logos} />
       <BookSection />
       <Overview />
       <DetailOverview />
@@ -35,11 +35,11 @@ function Home() {
       <ProcessSection />
       <CaseStudySec />
       <Testimonials />
-      <MovingSlider imgLinks={logos} heading={'Internationally certified'} />
+      <MovingSlider links={companies} />
       <IntroSection />
-      <Banner/>
-      <ContactSection/>
-      <Footer/>
+      <Banner />
+      <ContactSection />
+      <Footer />
     </Container>
   );
 }

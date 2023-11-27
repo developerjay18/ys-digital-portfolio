@@ -1,5 +1,6 @@
 import * as Image from '.././assets/certificate-logos/index';
 import { Astro, Befikr, A, Cosm, Clinic } from '../assets';
+import * as Image2 from '../assets/companies';
 
 const navLinks = [
   {
@@ -37,6 +38,20 @@ const logos = [
   { slug: Image.SD },
   { slug: Image.Udemy },
   { slug: Image.YT },
+];
+
+const companies = [
+  { slug: Image2.One },
+  { slug: Image2.Two },
+  { slug: Image2.Three },
+  { slug: Image2.Four },
+  { slug: Image2.Five },
+  { slug: Image2.Six },
+  { slug: Image2.Seven },
+  { slug: Image2.Eight },
+  { slug: Image2.Nine },
+  { slug: Image2.Ten },
+  { slug: Image2.Eleven },
 ];
 
 const caseStudies = [
@@ -135,21 +150,21 @@ const caseStudies = [
 
 const socialLinks = [
   {
-    iconName :"fa-linkedin",
+    iconName: 'fa-linkedin',
     url: 'https://www.linkedin.com/in/yashsharmadigital',
   },
   {
-    iconName :"fa-instagram",
+    iconName: 'fa-instagram',
     url: 'https://instagram.com/yashsharma.digital',
   },
   {
-    iconName :"fa-facebook",
+    iconName: 'fa-facebook',
     url: 'https://www.facebook.com/yashsharma.digital',
   },
   {
-    iconName :"fa-whatsapp",
+    iconName: 'fa-whatsapp',
     url: 'https://wa.me/919924894090',
   },
 ];
 
-export { navLinks, logos, caseStudies,socialLinks };
+export { navLinks, logos, caseStudies, socialLinks, companies };
