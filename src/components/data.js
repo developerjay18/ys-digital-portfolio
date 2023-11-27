@@ -135,19 +135,19 @@ const caseStudies = [
 
 const socialLinks = [
   {
-    imgUrl: LD,
+    iconName :"fa-linkedin",
     url: 'https://www.linkedin.com/in/yashsharmadigital',
   },
   {
-    imgUrl: Insta,
+    iconName :"fa-instagram",
     url: 'https://instagram.com/yashsharma.digital',
   },
   {
-    imgUrl: FB,
+    iconName :"fa-facebook",
     url: 'https://www.facebook.com/yashsharma.digital',
   },
   {
-    imgUrl: WP,
+    iconName :"fa-whatsapp",
     url: 'https://wa.me/919924894090',
   },
 ];

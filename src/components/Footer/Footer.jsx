@@ -12,20 +12,37 @@ function Footer() {
           <img src={FooterImg} alt="footer-img" className="border-b-[1px]" />
         </div>
         {/* lower  */}
-        <div className="lower">
-          <div className="links w-1/3 flex border">
+        <div className="lower mt-7 flex items-center">
+          <div className="links w-1/3 flex gap-6">
             {socialLinks.map((link, index) => {
               return (
                 <Link to={link.url} key={index}>
-                  <div className="border">
-                    <img src={link.imgUrl} alt="icon" className='w-[40%]'/>
-                  </div>
+                  <i className={`fa-brands ${link.iconName} fa-2xl`}></i>
                 </Link>
               );
             })}
           </div>
-          <div className="nav-links w-1/3"></div>
-          <div className="copyright w-1/3"></div>
+          <div className="nav-links w-1/3">
+            <div className="flex justify-center gap-5">
+              <Link to="/terms-and-conditions" className="border-r-2 pr-4">
+                <div>Terms &amp; Conditions</div>
+              </Link>
+              <Link to={'/privacy-policy'}>
+                <div>Privacy Policy</div>
+              </Link>
+            </div>
+          </div>
+          <div className="copyright w-1/3 border">
+            <div className="upper flex gap-1 justify-end">
+              <span>Developed by</span>
+              <span>
+                <Link to="http://www.jayraiweb.com">Jayrai web</Link>
+              </span>
+            </div>
+            <div className="lower capitalize text-right">
+              copyright @2023 All rights reserved.
+            </div>
+          </div>
         </div>
       </div>
     </div>
