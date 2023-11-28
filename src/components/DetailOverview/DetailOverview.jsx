@@ -4,19 +4,19 @@ import { VisitingCard } from '../../assets';
 
 function DetailOverview() {
   return (
-    <div className="container px-5 lg:px-0 mx-auto py-10 flex max-h-[137vh] overflow-hidden about">
+    <div className="container px-5 lg:px-0 mx-auto pt-10 lg:py-10 flex flex-col lg:flex-row max-h-[140vh] lg:max-h-[137vh] gap-10 lg:gap-0 overflow-hidden about relative">
       {/* left section  */}
-      <div className="left w-[40%]">
+      <div className="left lg:w-[40%]">
         <LinerHead lineClassName={`w-[40%] bg-black`}>overview</LinerHead>
       </div>
       {/* right section  */}
-      <div className="right w-[60%] flex flex-col gap-8">
+      <div className="right lg:w-[60%] flex flex-col gap-8">
         <div className="">
           <h1 className="text-5xl font-bold">Why its important? </h1>
         </div>
-        <div className="flex gap-7 w-[75%]">
+        <div className="flex gap-7 flex-col lg:flex-row w-full lg:w-[75%]">
           {/* inner-left  */}
-          <div className="inner-left w-1/2 flex flex-col gap-5">
+          <div className="inner-left lg:w-1/2 flex flex-col gap-5">
             <p className="text-lg">
               In today&apos;s world, digital marketing is super important for
               businesses. Imagine 4.9 billion people online every day!
@@ -30,7 +30,7 @@ function DetailOverview() {
             </p>
           </div>
           {/* inner-right  */}
-          <div className="inner-right w-1/2 flex flex-col gap-5">
+          <div className="inner-right lg:w-1/2 flex flex-col gap-5">
             <p className="text-lg">
               And here&apos;s the cool part: digital marketing gives you way
               more bang for your buck. For every rupee you spend, you can make
@@ -47,11 +47,11 @@ function DetailOverview() {
           </div>
         </div>
         {/* --lower */}
-        <div className="lower flex justify-end items-end mt-[5.5rem] w-[50%] ml-auto mr-16">
+        <div className="lower lg:flex justify-end items-end lg:mt-[5.5rem] w-[50%] ml-auto mr-10 lg:mr-16 hidden">
           <img
             src={VisitingCard}
             alt="visiting-card"
-            className="rotate-[12deg] shadow-lg shadow-black"
+            className="rotate-[11deg] lg:rotate-[12deg] shadow-lg shadow-black"
           />
         </div>
       </div>

@@ -7,15 +7,17 @@ function ProcessSection() {
   return (
     <div className="bg-gradient-long bg-black text-white services">
       <div className="container px-5 lg:px-0 mx-auto py-10 flex flex-col gap-10">
-        <div className="border-b-2 w-3/5 pb-5">
-          <h1 className="text-7xl font-bold">How it works?</h1>
+        <div className="border-b-2 w-full lg:w-3/5 pb-5">
+          <h1 className="text-5xl text-center lg:text-left lg:text-7xl font-bold">
+            How it works?
+          </h1>
         </div>
-        <p className="w-3/5 text-xl">
+        <p className="w-full text-center lg:text-left lg:w-3/5 text-xl">
           Digital marketing isn&apos;t complicated. It&apos;s just three simple
           steps. Let me help you how I can help you grow your business online
         </p>
         {/* cards */}
-        <div className="cards flex justify-between">
+        <div className="cards flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
           {processes.map((process, index) => (
             <Process
               key={index}

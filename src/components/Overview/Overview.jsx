@@ -9,16 +9,16 @@ function Overview() {
       <img
         src={OverviewCircle}
         alt="circle"
-        className="absolute top-0 w-full right-0"
+        className="absolute lg:block hidden top-0 w-full right-0"
       />
-      <div className="container px-5 lg:px-0 mx-auto py-16 flex flex-col relative">
-        <div className="flex z-10 py-10">
+      <div className="container px-5 lg:px-0 mx-auto lg:py-16 flex flex-col relative">
+        <div className="flex z-10 py-10 gap-10 lg:gap-0 flex-col lg:flex-row">
           {/* left section  */}
-          <div className="left w-[40%]">
+          <div className="left lg:w-[40%]">
             <LinerHead lineClassName={`w-[40%] bg-black`}>overview</LinerHead>
           </div>
           {/* right section  */}
-          <div className="right w-1/2 flex flex-col gap-5">
+          <div className="right lg:w-1/2 flex flex-col gap-5">
             <h1 className="text-5xl font-bold">Why consult with yash?</h1>
             <p className="text-lg">
               If you want to take your offline business online, expand its

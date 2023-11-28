@@ -2,11 +2,19 @@ import React from 'react';
 import { LinerHead } from '../index';
 import { Astro } from '../../assets';
 
-function CaseStudy({ imgUrl, title, description, stat1, stat2, stat3, bgColor}) {
+function CaseStudy({
+  imgUrl,
+  title,
+  description,
+  stat1,
+  stat2,
+  stat3,
+  bgColor,
+}) {
   return (
-    <div className={`flex ${bgColor} justify-between`}>
+    <div className={`flex flex-col lg:flex-row ${bgColor} justify-between`}>
       {/* left  */}
-      <div className="left w-[40%]">
+      <div className="left lg:w-[40%]">
         <div className="w-full">
           <img
             src={imgUrl}
@@ -16,7 +24,7 @@ function CaseStudy({ imgUrl, title, description, stat1, stat2, stat3, bgColor}) 
         </div>
       </div>
       {/* right */}
-      <div className="right w-[50%] flex flex-col justify-center gap-10 pr-20">
+      <div className="right w-full px-5 lg:px-0 lg:w-[50%] flex flex-col justify-center gap-10 lg:pr-20">
         <h1 className="text-5xl font-bold capitalize">{title}</h1>
         <p className="text-xl">{description}</p>
         <div className="flex justify-between text-2xl font-semibold">

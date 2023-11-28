@@ -4,15 +4,15 @@ import { Button } from '../index';
 
 function BookSection() {
   return (
-    <div className="bg-[#f2f2f2]">
-      <div className="container px-5 lg:px-0 mx-auto flex">
+    <div className="bg-[#f2f2f2] py-5 lg:py-0">
+      <div className="container px-5 lg:px-0 mx-auto flex flex-col lg:flex-row">
         {/* left side  */}
-        <div className="left w-1/2">
+        <div className="left lg:w-1/2">
           <img src={BookCover} alt="book-cover" className="" />
         </div>
         {/* right side  */}
-        <div className="right w-1/2 flex justify-center flex-col gap-7">
-          <h1 className="text-7xl font-bold leading-[5rem] capitalize">
+        <div className="right text-center lg:text-left lg:w-1/2 flex justify-center flex-col gap-7">
+          <h1 className="text-5xl lg:text-7xl font-bold lg:leading-[5rem] capitalize text-center lg:text-left">
             facebook ads guide
           </h1>
           <p className="text-lg pr-10">

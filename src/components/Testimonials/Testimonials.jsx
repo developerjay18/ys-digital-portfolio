@@ -18,7 +18,7 @@ function Testimonials() {
     <div className="bg-[#eeeeee]">
 
     <div className="container px-5 lg:px-0 mx-auto flex py-10 flex-col">
-      <h2 className="text-7xl py-5 font-bold text-center w-full">Testimonials</h2>
+      <h2 className=" text-5xl lg:text-7xl py-2 lg:py-5 font-bold text-center w-full">Testimonials</h2>
       <div className="flex pt-10 gap-5">
         {/* left  */}
         <div className="left w-1/2 flex flex-col gap-5 max-h-[295vh]">

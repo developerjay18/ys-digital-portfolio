@@ -11,7 +11,6 @@
 
 /* slider CSS code */
 .slider {
-  height: 250px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -26,10 +25,10 @@
   width: calc(250px * 14);
 }
 
-.slider .slide {
+/* .slider .slide {
   height: 100px;
   width: 250px;
-}
+} */
 
 @keyframes scroll {
   0% {

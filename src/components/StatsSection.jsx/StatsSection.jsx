@@ -55,7 +55,7 @@ function StatsSection() {
           {statsData.map((data) => (
             <div
               id="count-up-section"
-              className="w-full md:w-[50%] lg:w-auto"
+              className="w-full text-center lg-text-left md:w-[50%] lg:w-auto"
               key={data.number}
             >
               {isVisible && (
@@ -71,7 +71,7 @@ function StatsSection() {
                     </span>
                     <span>{data.extra}</span>
                   </div>
-                  <div className="text-md md:text-4xl capitalize font-semibold">
+                  <div className="text-2xl md:text-4xl capitalize font-semibold">
                     {data.title}
                   </div>
                 </div>

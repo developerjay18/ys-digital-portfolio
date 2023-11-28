@@ -3,9 +3,9 @@ import { Call, Email } from '../../assets';
 
 function ContactSection() {
   return (
-    <div className="container px-5 lg:px-0 mx-auto py-10 flex contact">
+    <div className="container px-5 lg:px-0 mx-auto py-10 flex flex-col lg:flex-row contact gap-10 lg:gap-0">
       {/* left  */}
-      <div className="left w-1/2 flex flex-col gap-5">
+      <div className="left lg:w-1/2 flex flex-col gap-5">
         <h4 className="text-2xl">Want to work with me?</h4>
         <h1 className="text-5xl font-bold">Drop Me A Message</h1>
         <p className="text-xl pr-10">
@@ -29,7 +29,7 @@ function ContactSection() {
         </div>
       </div>
       {/* right  */}
-      <div className="right w-1/2">
+      <div className="right lg:w-1/2">
         <div className="">
           <form action="" className="flex flex-col gap-4">
             <div className="flex flex-col">
@@ -78,7 +78,7 @@ function ContactSection() {
             </div>
             <button
               type="submit"
-              className="bg-red text-white py-3 px-8 capitalize w-[30%] hover:bg-[#CA0606] mt-6"
+              className="bg-red text-white py-3 px-8 capitalize w-[40%] lg:w-[30%] hover:bg-[#CA0606] mt-6"
             >
               submit
             </button>

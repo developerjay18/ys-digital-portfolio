@@ -12,8 +12,8 @@ function Footer() {
           <img src={FooterImg} alt="footer-img" className="border-b-[1px]" />
         </div>
         {/* lower  */}
-        <div className="lower mt-7 flex items-center">
-          <div className="links w-1/3 flex gap-6">
+        <div className="lower mt-7 flex gap-8 lg:gap-0 flex-col lg:flex-row items-center">
+          <div className="links lg:w-1/3 flex gap-6">
             {socialLinks.map((link, index) => {
               return (
                 <Link to={link.url} key={index}>
@@ -22,7 +22,7 @@ function Footer() {
               );
             })}
           </div>
-          <div className="nav-links w-1/3">
+          <div className="nav-links lg:w-1/3">
             <div className="flex justify-center gap-5">
               <Link to="/terms-and-conditions" className="border-r-2 pr-4">
                 <div>Terms &amp; Conditions</div>
@@ -32,8 +32,8 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div className="copyright w-1/3">
-            <div className="upper flex gap-1 justify-end">
+          <div className="copyright lg:w-1/3">
+            <div className="upper flex gap-1 justify-center lg:justify-end">
               <span>Developed by</span>
               <span>
                 <Link to="http://www.jayraiweb.com">Jayrai web</Link>
