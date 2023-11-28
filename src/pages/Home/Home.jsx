@@ -19,23 +19,25 @@ import {
   Footer,
 } from '../../components';
 import { logos, companies } from '../../components/data';
+import { Group } from '../../assets';
 
 function Home() {
   return (
     <Container>
       <Header />
       <HeroSection />
-      <MovingSlider links={logos} />
+      <MovingSlider links={companies} heading={`worked with`} />
       <BookSection />
+      <ProcessSection />
       <Overview />
       <DetailOverview />
       <HireSection />
       <PointsSection />
       <StatsSection />
-      <ProcessSection />
+      <img src={Group} alt="group-image" />
       <CaseStudySec />
       <Testimonials />
-      <MovingSlider links={companies} />
+      <MovingSlider links={logos} heading={`certified from`} />
       <IntroSection />
       <Banner />
       <ContactSection />

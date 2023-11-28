@@ -3,10 +3,15 @@
   background-size: cover;
   background-position: center;
 }
+.bg-gradient-long {
+  background-image: url('./assets/backgrounds/gradient-long.png');
+  background-size: cover;
+  background-position: center;
+}
 
 /* slider CSS code */
 .slider {
-  height: 200px;
+  height: 250px;
   margin: auto;
   overflow: hidden;
   position: relative;

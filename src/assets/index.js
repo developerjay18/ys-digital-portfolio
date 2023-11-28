@@ -20,6 +20,8 @@ import IntroImg from './image-4.jpeg';
 import FooterImg from './footer.png';
 import Call from './call.png';
 import Email from './email.png';
+import BlackBGGrad from './backgrounds/black-gradient.svg';
+import Group from './group.jpg';
 
 export {
   Logo,
@@ -44,4 +46,6 @@ export {
   FooterImg,
   Call,
   Email,
+  BlackBGGrad,
+  Group,
 };

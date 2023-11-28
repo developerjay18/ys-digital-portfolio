@@ -17,12 +17,12 @@ function Header() {
         {/* main-header */}
         <div className="main-header px-5 lg:px-0 container mx-auto flex justify-between items-center py-4">
           {/* --logo-container */}
-          <Link to={"/"} className='w-[5%]'>
+          <Link to={'/'} className="w-[5%]">
             <div className="logo w-full">
               <img
                 src={Logo}
                 alt="logo"
-                className="bg-black rounded-full p-1"
+                className="bg-white border-2 border-black rounded-full"
               />
             </div>
           </Link>

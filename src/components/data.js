@@ -1,5 +1,5 @@
 import * as Image from '.././assets/certificate-logos/index';
-import { Astro, Befikr, A, Cosm, Clinic } from '../assets';
+import { Astro, Befikr, A, Cosm, Clinic, S1, S2, S3 } from '../assets';
 import * as Image2 from '../assets/companies';
 
 const navLinks = [
@@ -167,4 +167,28 @@ const socialLinks = [
   },
 ];
 
-export { navLinks, logos, caseStudies, socialLinks, companies };
+const processes = [
+  {
+    step: 'step 01',
+    imgURl: S1,
+    title: 'Setup Social Media',
+    content: `Firstly, I will create and enhance your social media profiles, ensuring a consistent and reliable presence. I will also maintain regular posts for at least the initial 7 days to strengthen your social media pages. If your page already contains sufficient content, congratulations! You can proceed to the next step.
+    `,
+  },
+  {
+    step: 'step 02',
+    imgURl: S2,
+    title: 'Start Running Ad',
+    content: `After that, I'll develop a powerful advertising plan customized for your business to run ads on Facebook and Instagram. We'll sit down together to determine your target audience and identify the kind of offer that will attract leads and boost sales. 
+    `,
+  },
+  {
+    step: 'step 03',
+    imgURl: S3,
+    title: 'Scale This System',
+    content: `Following 15 days of advertising, we'll have valuable data to expand this system. At this point, we can raise the ad budget and significantly grow your business.
+    `,
+  },
+];
+
+export { navLinks, logos, caseStudies, socialLinks, companies, processes };
