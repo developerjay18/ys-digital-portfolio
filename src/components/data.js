@@ -5,23 +5,23 @@ import * as Image2 from '../assets/companies';
 const navLinks = [
   {
     name: 'home',
-    slug: '/',
+    slug: 'home',
   },
   {
     name: 'case study',
-    slug: '/case-study',
+    slug: 'case-study',
   },
   {
     name: 'services',
-    slug: '/services',
+    slug: 'services',
   },
   {
     name: 'about',
-    slug: '/about',
+    slug: 'about',
   },
   {
     name: 'contact',
-    slug: '/contact',
+    slug: 'contact',
   },
 ];
 

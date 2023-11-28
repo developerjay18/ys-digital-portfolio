@@ -4,7 +4,7 @@ import { caseStudies } from '../data';
 
 function CaseStudySec() {
   return (
-    <div className="">
+    <div className="case-study">
       {caseStudies.map((caseStudy, index) => (
         <CaseStudy
           key={index}

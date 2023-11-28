@@ -3,7 +3,7 @@ import { Call, Email } from '../../assets';
 
 function ContactSection() {
   return (
-    <div className="container px-5 lg:px-0 mx-auto py-10 flex">
+    <div className="container px-5 lg:px-0 mx-auto py-10 flex contact">
       {/* left  */}
       <div className="left w-1/2 flex flex-col gap-5">
         <h4 className="text-2xl">Want to work with me?</h4>

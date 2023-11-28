@@ -5,7 +5,7 @@ import { processes } from '../data';
 
 function ProcessSection() {
   return (
-    <div className="bg-gradient-long bg-black text-white">
+    <div className="bg-gradient-long bg-black text-white services">
       <div className="container px-5 lg:px-0 mx-auto py-10 flex flex-col gap-10">
         <div className="border-b-2 w-3/5 pb-5">
           <h1 className="text-7xl font-bold">How it works?</h1>

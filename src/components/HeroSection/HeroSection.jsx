@@ -4,7 +4,7 @@ import { Button } from '../index';
 import { HeroCircle, HeroImg, LeftArrow, RightArrow } from '../../assets';
 function HeroSection() {
   return (
-    <div className="">
+    <div className="max-h-[90vh] overflow-hidden relative home">
       {/* others  */}
       <img src={HeroCircle} alt="circle" className="absolute -top-12 z-0" />
       <div className="home container px-5 lg:px-0 mx-auto flex max-h-[90vh] relative overflow-hidden">
