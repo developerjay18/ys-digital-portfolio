@@ -22,7 +22,7 @@ function BookSection() {
           </p>
           <Button
             className={`bg-red py-3 px-7 text-white`}
-            link={'https://calendly.com/contactyash2004/call'}
+            link={'https://yashsharmadigital.com'}
           >
             download now
           </Button>
