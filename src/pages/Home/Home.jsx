@@ -17,6 +17,7 @@ import {
   Banner,
   ContactSection,
   Footer,
+  BurgerMenu,
 } from '../../components';
 import { logos, companies } from '../../components/data';
 import { Group } from '../../assets';
@@ -25,6 +26,7 @@ function Home() {
   return (
     <Container>
       <Header />
+      <BurgerMenu /> {/*visibles oly when user toggle burger menu*/}
       <HeroSection />
       <MovingSlider links={companies} heading={`worked with`} />
       <BookSection />
@@ -34,7 +36,7 @@ function Home() {
       <HireSection />
       <PointsSection />
       <StatsSection />
-      <img src={Group} alt="group-image" />
+      <img src={Group} alt="group-image" className='mb-10'/>
       <CaseStudySec />
       <Testimonials />
       <MovingSlider links={logos} heading={`certified from`} />

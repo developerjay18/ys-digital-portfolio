@@ -19,9 +19,9 @@ function Testimonials() {
 
     <div className="container px-5 lg:px-0 mx-auto flex py-10 flex-col">
       <h2 className=" text-5xl lg:text-7xl py-2 lg:py-5 font-bold text-center w-full">Testimonials</h2>
-      <div className="flex pt-10 gap-5">
+      <div className="flex flex-col lg:flex-row pt-10 gap-5">
         {/* left  */}
-        <div className="left w-1/2 flex flex-col gap-5 max-h-[295vh]">
+        <div className="left lg:w-1/2 flex flex-col gap-5 max-h-[295vh]">
           <img src={Eight} alt="review" />
           <img src={Five} alt="review" />
           <img src={Ten} alt="review" />
@@ -29,7 +29,7 @@ function Testimonials() {
           <img src={Six} alt="review" />
         </div>
         {/* right  */}
-        <div className="right w-1/2 flex flex-col gap-5 max-h-[295vh] overflow-hidden">
+        <div className="right lg:w-1/2 flex flex-col gap-5 max-h-[295vh] overflow-hidden">
           <img src={One} alt="review" />
           <img src={Two} alt="review" />
           <img src={Three} alt="review" />

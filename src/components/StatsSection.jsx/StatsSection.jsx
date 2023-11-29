@@ -44,7 +44,7 @@ function StatsSection() {
   ];
 
   return (
-    <div className="bg-gradient text-white my-10 py-10">
+    <div className="bg-gradient-long bg-black text-white my-10 py-10">
       <div className="w-full flex container px-5 lg:px-0 mx-auto py-10 justify-between br-gradient flex-col md:flex-row flex-wrap gap-12 md:gap-0 lg:gap-0">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
