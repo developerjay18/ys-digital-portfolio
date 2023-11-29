@@ -4,6 +4,7 @@ import { navLinks } from '../data';
 import { Link } from 'react-scroll';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
+import { Link as RLink } from 'react-router-dom';
 
 function Header() {
   const dispatch = useDispatch();
@@ -18,9 +19,11 @@ function Header() {
           <span className="text-center">
             grab your 7 day free trial : valid only for next 3 days
           </span>
-          <button className="bg-lightGrey text-black p-1 px-2 rounded-full capitalize">
-            claim now
-          </button>
+          <RLink to={'https://calendly.com/contactyash2004/call'}>
+            <button className="bg-lightGrey text-black p-1 px-2 rounded-full capitalize">
+              claim now
+            </button>
+          </RLink>
         </div>
         {/* main-header */}
         <div className="main-header px-5 lg:px-0 container mx-auto flex justify-between items-center py-3 lg:py-4 pb-12 lg:pb-0">

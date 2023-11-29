@@ -43,7 +43,10 @@ function IntroSection() {
           </p>
         </div>
         <div className="">
-          <Button className={`bg-red text-white py-3 px-8`}>
+          <Button
+            className={`bg-red text-white py-3 px-8`}
+            link={'https://calendly.com/contactyash2004/call'}
+          >
             schedule a call
           </Button>
         </div>

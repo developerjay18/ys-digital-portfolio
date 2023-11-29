@@ -23,8 +23,11 @@ function PointsSection() {
           &gt; Shift To Fast & Effective Marketing Strategy and generate real
           profits...
         </p>
-        <Button className={`bg-red text-white py-3 px-7`}>
-          contact now to grow
+        <Button
+          className={`bg-red text-white py-3 px-7`}
+          link={'https://calendly.com/contactyash2004/call'}
+        >
+          schedule a call
         </Button>
       </div>
     </div>

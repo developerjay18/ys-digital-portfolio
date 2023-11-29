@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from '../index';
 import { HeroCircle, HeroImg, LeftArrow, RightArrow } from '../../assets';
+import { Link } from 'react-scroll';
+
 function HeroSection() {
   return (
     <div className="h-auto lg:max-h-[90vh] lg:overflow-hidden relative home">
@@ -17,12 +18,17 @@ function HeroSection() {
             helping businesses generate more profit using digital marketing.
           </p>
           <div className="buttons flex gap-5 items-center">
-            <Button className={`bg-red px-7 py-3 text-white`}>
-              whatsapp now
+            <Button
+              className={`bg-red px-7 py-3 text-white`}
+              link={'https://calendly.com/contactyash2004/call'}
+            >
+              schedule a call
             </Button>
-            <Button className={`border-2 border-red py-3 px-7`}>
-              view case study
-            </Button>
+            <Link to={'case-study'}>
+              <Button className={`border-2 border-red py-3 px-7`}>
+                view case study
+              </Button>
+            </Link>
           </div>
         </div>
 

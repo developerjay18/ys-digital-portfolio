@@ -29,7 +29,12 @@ function ProcessSection() {
           ))}
         </div>
         <div className="mx-auto">
-          <Button className={` bg-red py-3 px-8`}>whatsapp now</Button>
+          <Button
+            className={` bg-red py-3 px-8`}
+            link={'https://calendly.com/contactyash2004/call'}
+          >
+            schedule a call
+          </Button>
         </div>
       </div>
     </div>

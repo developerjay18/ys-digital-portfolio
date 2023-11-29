@@ -36,7 +36,7 @@ function Footer() {
             <div className="upper flex gap-1 justify-center lg:justify-end">
               <span>Developed by</span>
               <span>
-                <Link to="http://www.jayraiweb.com">Jayrai web</Link>
+                <Link to="http://www.jayraiweb.com" className='hover:text-red'>Jayrai web</Link>
               </span>
             </div>
             <div className="lower capitalize text-right">

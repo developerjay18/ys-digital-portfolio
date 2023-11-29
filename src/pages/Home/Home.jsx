@@ -36,7 +36,7 @@ function Home() {
       <HireSection />
       <PointsSection />
       <StatsSection />
-      <img src={Group} alt="group-image" className='mb-10'/>
+      <img src={Group} alt="group-image" className="mb-10" />
       <CaseStudySec />
       <Testimonials />
       <MovingSlider links={logos} heading={`certified from`} />

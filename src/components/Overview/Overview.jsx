@@ -25,8 +25,11 @@ function Overview() {
               reach, and connect with more customers, a consultation with Yash
               Sharma might be the perfect solution for you.
             </p>
-            <Button className={`bg-red py-3 px-7 text-white`}>
-              book meeting now
+            <Button
+              className={`bg-red py-3 px-7 text-white`}
+              link={'https://calendly.com/contactyash2004/call'}
+            >
+              schedule a call
             </Button>
           </div>
         </div>

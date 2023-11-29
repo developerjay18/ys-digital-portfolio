@@ -20,8 +20,11 @@ function BookSection() {
             Facebook ads, just grab this FREE guide and start running your own
             ads.
           </p>
-          <Button className={`bg-red py-3 px-7 text-white`}>
-            download now
+          <Button
+            className={`bg-red py-3 px-7 text-white`}
+            link={'https://calendly.com/contactyash2004/call'}
+          >
+            schedule a call
           </Button>
         </div>
       </div>

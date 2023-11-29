@@ -1,5 +1,5 @@
 import React from 'react';
-import { VisitingCard ,FeatherImg} from '../../assets';
+import { VisitingCard, FeatherImg } from '../../assets';
 import { LinerHead, Button } from '../index';
 
 function HireSection() {
@@ -18,19 +18,28 @@ function HireSection() {
         <div className="middle flex flex-col lg:flex-row py-10 gap-10 lg:gap-0 lg:pl-20">
           <div className="left lg:w-1/2">
             <LinerHead lineClassName={`w-[30%] lg:w-[40%] bg-white`}>
-              <span className='capitalize text-md'>still not convinced?</span>
+              <span className="capitalize text-md">still not convinced?</span>
             </LinerHead>
           </div>
           <div className="right lg:w-1/2 flex flex-col gap-5">
             <h1 className="text-4xl font-bold">
               Don&apos;t worry see my results.
             </h1>
-            <Button className={`bg-red py-3 px-7 text-white`}>Hire yash sharma</Button>
+            <Button
+              className={`bg-red py-3 px-7 text-white`}
+              link={'https://calendly.com/contactyash2004/call'}
+            >
+              schedule a call
+            </Button>
           </div>
         </div>
         {/* lower */}
         <div className="lower hidden lg:block pl-20 w-[40%] max-h-full overflow-hidden">
-          <img src={FeatherImg} alt="image" className='shadow-lg shadow-black'/>
+          <img
+            src={FeatherImg}
+            alt="image"
+            className="shadow-lg shadow-black"
+          />
         </div>
       </div>
     </div>
