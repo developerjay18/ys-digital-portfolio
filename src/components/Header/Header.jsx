@@ -26,7 +26,7 @@ function Header() {
           </RLink>
         </div>
         {/* main-header */}
-        <div className="main-header px-5 lg:px-0 container mx-auto flex justify-between items-center py-3 lg:py-4 pb-12 lg:pb-0">
+        <div className="main-header px-5 lg:px-10 container mx-auto flex justify-between items-center py-3 lg:py-4 pb-12 lg:pb-0">
           {/* --logo-container */}
           <Link to={'/'} className="w-[16%] lg:w-[5%]">
             <div className="logo w-full">

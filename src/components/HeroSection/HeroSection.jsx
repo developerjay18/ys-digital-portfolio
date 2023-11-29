@@ -8,7 +8,7 @@ function HeroSection() {
     <div className="h-auto lg:max-h-[90vh] lg:overflow-hidden relative home">
       {/* others  */}
       <img src={HeroCircle} alt="circle" className="absolute -top-12 z-0" />
-      <div className="home container px-5 lg:px-0 mx-auto flex flex-col lg:flex-row lg:max-h-[90vh] relative lg:overflow-hidden">
+      <div className="home container px-5 lg:px-10 mx-auto flex flex-col lg:flex-row lg:max-h-[90vh] relative lg:overflow-hidden">
         {/* left-content section */}
         <div className="left lg:w-1/2 flex flex-col gap-7 justify-center z-10">
           <h1 className="text-5xl lg:text-[4rem] capitalize font-bold lg:leading-[4.5rem] text-center lg:text-left">
@@ -46,10 +46,10 @@ function HeroSection() {
             <span className=" absolute top-[18%] left-[10%] w-[15%]">
               <img src={LeftArrow} alt="" className="" />
             </span>
-            <span className="capitalize absolute top-[20%] font-bold rotate-[10deg] text-xl lg:text-2xl right-0">
+            <span className="capitalize absolute top-[20%] font-bold rotate-[16deg] text-[1rem] lg:text-2xl right-0">
               digital marketer
             </span>
-            <span className=" absolute top-[28%] w-[9%] right-[10%]">
+            <span className=" absolute top-[24%] lg:top-[28%] w-[9%] right-[20%] lg:right-[10%]">
               <img src={RightArrow} alt="" />
             </span>
           </div>

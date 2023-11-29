@@ -5,7 +5,7 @@ import { Button } from '../index';
 function BookSection() {
   return (
     <div className="bg-[#f2f2f2] py-5 lg:py-0">
-      <div className="container px-5 lg:px-0 mx-auto flex flex-col lg:flex-row">
+      <div className="container px-5 lg:px-10 mx-auto flex flex-col lg:flex-row">
         {/* left side  */}
         <div className="left lg:w-1/2">
           <img src={BookCover} alt="book-cover" className="" />
@@ -15,7 +15,7 @@ function BookSection() {
           <h1 className="text-5xl lg:text-7xl font-bold lg:leading-[5rem] capitalize text-center lg:text-left">
             facebook ads guide
           </h1>
-          <p className="text-lg pr-10">
+          <p className="text-lg lg:pr-10">
             If you want to make more money and need a simple guide on how to run
             Facebook ads, just grab this FREE guide and start running your own
             ads.
@@ -24,7 +24,7 @@ function BookSection() {
             className={`bg-red py-3 px-7 text-white`}
             link={'https://calendly.com/contactyash2004/call'}
           >
-            schedule a call
+            download now
           </Button>
         </div>
       </div>

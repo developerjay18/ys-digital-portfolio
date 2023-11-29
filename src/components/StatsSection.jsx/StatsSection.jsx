@@ -23,7 +23,7 @@ function StatsSection() {
   const statsData = [
     {
       number: '20',
-      extra: 'Million +',
+      extra: 'M+',
       title: 'reach',
     },
     {
@@ -50,12 +50,12 @@ function StatsSection() {
           initial={{ opacity: 0, scale: 0 }}
           animate={controls}
           transition={{ duration: 1 }}
-          className="w-full flex justify-around flex-col md:flex-row gap-12 md:gap-0"
+          className="w-full flex justify-around flex-row flex-wrap md:flex-row gap-12 md:gap-0"
         >
           {statsData.map((data) => (
             <div
               id="count-up-section"
-              className="w-full text-center lg-text-left md:w-[50%] lg:w-auto"
+              className="text-center lg-text-left w-[40%] md:w-[50%] lg:w-auto flex"
               key={data.number}
             >
               {isVisible && (

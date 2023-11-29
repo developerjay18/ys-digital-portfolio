@@ -6,7 +6,7 @@ import { socialLinks } from '../data';
 function Footer() {
   return (
     <div className="bg-black text-white">
-      <div className="container px-5 lg:px-0 mx-auto py-10 flex flex-col">
+      <div className="container px-5 lg:px-10 mx-auto py-10 flex flex-col">
         {/* upper  */}
         <div className="upper">
           <img src={FooterImg} alt="footer-img" className="border-b-[1px]" />

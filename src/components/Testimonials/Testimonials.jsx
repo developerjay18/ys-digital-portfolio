@@ -16,7 +16,7 @@ import { Button } from '../index';
 function Testimonials() {
   return (
     <div className="bg-[#eeeeee]">
-      <div className="container px-5 lg:px-0 mx-auto flex py-10 flex-col">
+      <div className="container px-5 lg:px-10 mx-auto flex py-10 flex-col">
         <h2 className=" text-5xl lg:text-7xl py-2 lg:py-5 font-bold text-center w-full">
           Testimonials
         </h2>

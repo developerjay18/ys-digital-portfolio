@@ -4,10 +4,19 @@ import { VisitingCard } from '../../assets';
 
 function DetailOverview() {
   return (
-    <div className="container px-5 lg:px-0 mx-auto pt-10 lg:py-10 flex flex-col lg:flex-row max-h-[140vh] lg:max-h-[137vh] gap-10 lg:gap-0 overflow-hidden relative">
+    <div className="container px-5 lg:px-10 mx-auto pt-10 lg:py-10 flex flex-col lg:flex-row max-h-[147vh] lg:min-h-[140vh] gap-10 lg:gap-0 overflow-hidden relative">
       {/* left section  */}
-      <div className="left lg:w-[40%]">
-        <LinerHead lineClassName={`w-[40%] bg-black`}>overview</LinerHead>
+      <div className="left lg:w-[40%] flex flex-col justify-between">
+        <div className="">
+          <LinerHead lineClassName={`w-[40%] bg-black`}>overview</LinerHead>
+        </div>
+        <div className="lower flex pt-5 w-[90%] lg:w-[80%] mx-auto lg:justify-end items-end lg:mt-[5.5rem] ml-auto lg:mr-16 lg:mb-10">
+          <img
+            src={VisitingCard}
+            alt="visiting-card"
+            className="lg:-rotate-[8deg] shadow-lg shadow-black"
+          />
+        </div>
       </div>
       {/* right section  */}
       <div className="right lg:w-[60%] flex flex-col gap-8">
@@ -47,13 +56,6 @@ function DetailOverview() {
           </div>
         </div>
         {/* --lower */}
-        <div className="lower lg:flex justify-end items-end lg:mt-[5.5rem] w-[50%] ml-auto mr-10 lg:mr-16 hidden">
-          <img
-            src={VisitingCard}
-            alt="visiting-card"
-            className="rotate-[11deg] lg:rotate-[12deg] shadow-lg shadow-black"
-          />
-        </div>
       </div>
     </div>
   );

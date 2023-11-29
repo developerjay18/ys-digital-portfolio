@@ -6,12 +6,14 @@ function Overview() {
   return (
     <div className="bg-[#ffffff] relative">
       {/* others */}
-      <img
-        src={OverviewCircle}
-        alt="circle"
-        className="absolute lg:block hidden top-0 w-full right-0"
-      />
-      <div className="container px-5 lg:px-0 mx-auto lg:py-16 flex flex-col relative">
+      <div className="absolute hidden lg:block right-0">
+        <img
+          src={OverviewCircle}
+          alt="circle"
+          className=""
+        />
+      </div>
+      <div className="container px-5 lg:px-10 mx-auto lg:py-16 flex flex-col relative">
         <div className="flex z-10 py-10 gap-10 lg:gap-0 flex-col lg:flex-row">
           {/* left section  */}
           <div className="left lg:w-[40%]">

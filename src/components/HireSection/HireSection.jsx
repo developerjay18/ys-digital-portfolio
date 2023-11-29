@@ -6,14 +6,6 @@ function HireSection() {
   return (
     <div className="bg-gradient">
       <div className="container px-5 lg:px-0 mx-auto text-white max-h-[98vh] overflow-hidden py-10 lg:py-0">
-        {/* upper  */}
-        <div className="upper lg:block hidden h-[35vh] w-[60%] ml-auto overflow-hidden">
-          <img
-            src={VisitingCard}
-            alt="visiting-card"
-            className="w-[50%] rotate-[12deg] ml-auto mr-[4rem] -mt-[6.8rem] cursor-pointer shadow-lg shadow-black"
-          />
-        </div>
         {/* middle  */}
         <div className="middle flex flex-col lg:flex-row py-10 gap-10 lg:gap-0 lg:pl-20">
           <div className="left lg:w-1/2">
@@ -32,14 +24,6 @@ function HireSection() {
               schedule a call
             </Button>
           </div>
-        </div>
-        {/* lower */}
-        <div className="lower hidden lg:block pl-20 w-[40%] max-h-full overflow-hidden">
-          <img
-            src={FeatherImg}
-            alt="image"
-            className="shadow-lg shadow-black"
-          />
         </div>
       </div>
     </div>
