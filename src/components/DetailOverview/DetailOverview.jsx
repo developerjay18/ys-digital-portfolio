@@ -4,7 +4,7 @@ import { VisitingCard } from '../../assets';
 
 function DetailOverview() {
   return (
-    <div className="container px-5 lg:px-0 mx-auto pt-10 lg:py-10 flex flex-col lg:flex-row max-h-[140vh] lg:max-h-[137vh] gap-10 lg:gap-0 overflow-hidden about relative">
+    <div className="container px-5 lg:px-0 mx-auto pt-10 lg:py-10 flex flex-col lg:flex-row max-h-[140vh] lg:max-h-[137vh] gap-10 lg:gap-0 overflow-hidden relative">
       {/* left section  */}
       <div className="left lg:w-[40%]">
         <LinerHead lineClassName={`w-[40%] bg-black`}>overview</LinerHead>

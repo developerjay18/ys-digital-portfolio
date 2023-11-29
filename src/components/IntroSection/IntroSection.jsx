@@ -4,7 +4,7 @@ import { IntroImg } from '../../assets';
 
 function IntroSection() {
   return (
-    <div className="container px-5 flex flex-col lg:flex-row lg:px-0 mx-auto py-10 gap-10 lg:gap-0">
+    <div className="container px-5 flex flex-col lg:flex-row lg:px-0 mx-auto py-10 gap-10 lg:gap-0 about">
       {/* left  */}
       <div className="left lg:w-1/2 flex flex-col gap-8">
         <div className="flex flex-col gap-4">
