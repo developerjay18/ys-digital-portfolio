@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../index';
 import { IntroImg } from '../../assets';
+import { calLink } from '../data';
 
 function IntroSection() {
   return (
@@ -45,7 +46,7 @@ function IntroSection() {
         <div className="">
           <Button
             className={`bg-red text-white py-3 px-8`}
-            link={'https://calendly.com/contactyash2004/call'}
+            link={calLink}
           >
             schedule a call
           </Button>

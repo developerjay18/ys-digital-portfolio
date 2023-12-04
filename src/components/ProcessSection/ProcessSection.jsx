@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Button } from '../index';
 import Process from './Process';
-import { processes } from '../data';
+import { calLink, processes } from '../data';
 
 function ProcessSection() {
   const animatedDivRef = useRef(null);
@@ -60,7 +60,7 @@ function ProcessSection() {
             <div className="mx-auto">
               <Button
                 className={` bg-red py-3 px-8`}
-                link={'https://calendly.com/contactyash2004/call'}
+                link={calLink}
               >
                 schedule a call
               </Button>

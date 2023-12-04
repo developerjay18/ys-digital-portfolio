@@ -1,6 +1,7 @@
 import React from 'react';
 import { VisitingCard, FeatherImg } from '../../assets';
 import { LinerHead, Button } from '../index';
+import { calLink } from '../data';
 
 function HireSection() {
   return (
@@ -19,7 +20,7 @@ function HireSection() {
             </h1>
             <Button
               className={`bg-red py-3 px-7 text-white`}
-              link={'https://calendly.com/contactyash2004/call'}
+              link={calLink}
             >
               schedule a call
             </Button>

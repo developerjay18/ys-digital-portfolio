@@ -1,6 +1,7 @@
 import React from 'react';
 import { LinerHead, Button } from '../index';
 import { OverviewImg, OverviewCircle } from '../../assets';
+import { calLink } from '../data';
 
 function Overview() {
   return (
@@ -29,7 +30,7 @@ function Overview() {
             </p>
             <Button
               className={`bg-red py-3 px-7 text-white`}
-              link={'https://calendly.com/contactyash2004/call'}
+              link={calLink}
             >
               schedule a call
             </Button>

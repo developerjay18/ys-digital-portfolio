@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../index';
 import { HeroCircle, HeroImg, LeftArrow, RightArrow } from '../../assets';
 import { Link } from 'react-scroll';
+import { calLink } from '../data';
 
 function HeroSection() {
   return (
@@ -20,7 +21,7 @@ function HeroSection() {
           <div className="buttons flex gap-5 items-center">
             <Button
               className={`bg-red px-7 py-3 text-white`}
-              link={'https://calendly.com/contactyash2004/call'}
+              link={calLink}
             >
               schedule a call
             </Button>

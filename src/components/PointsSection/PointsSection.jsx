@@ -1,6 +1,7 @@
 import React from 'react';
 import { FeatherImg } from '../../assets';
 import { Button } from '../index';
+import { calLink } from '../data';
 
 function PointsSection() {
   return (
@@ -27,7 +28,7 @@ function PointsSection() {
         </p>
         <Button
           className={`bg-red text-white py-3 px-7`}
-          link={'https://calendly.com/contactyash2004/call'}
+          link={calLink}
         >
           schedule a call
         </Button>

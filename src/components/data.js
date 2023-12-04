@@ -191,4 +191,6 @@ const processes = [
   },
 ];
 
+export const calLink = 'https://calendly.com/yashsharmadigital/call'
+
 export { navLinks, logos, caseStudies, socialLinks, companies, processes };

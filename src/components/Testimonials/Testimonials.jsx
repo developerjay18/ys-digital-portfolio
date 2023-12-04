@@ -12,6 +12,7 @@ import {
   Ten,
 } from '../../assets/reviews';
 import { Button } from '../index';
+import { calLink } from '../data';
 
 function Testimonials() {
   return (
@@ -40,7 +41,7 @@ function Testimonials() {
         <div className="mx-auto pt-10">
           <Button
             className={`bg-black text-white py-4 px-7`}
-            link={'https://calendly.com/contactyash2004/call'}
+            link={calLink}
           >
             Schedule a call
           </Button>
