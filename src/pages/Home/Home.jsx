@@ -18,6 +18,7 @@ import {
   ContactSection,
   Footer,
   BurgerMenu,
+  ScrollToTop,
 } from '../../components';
 import { logos, companies } from '../../components/data';
 import { Group } from '../../assets';
@@ -25,6 +26,7 @@ import { Group } from '../../assets';
 function Home() {
   return (
     <Container>
+      <ScrollToTop />
       <Header />
       <BurgerMenu /> {/*visibles oly when user toggle burger menu*/}
       <HeroSection />

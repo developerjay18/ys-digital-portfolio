@@ -3,7 +3,7 @@ import { FooterImg } from '../../assets';
 import { Link } from 'react-router-dom';
 import { socialLinks } from '../data';
 
-function Footer() {
+function Footer2() {
   return (
     <div className="bg-black text-white">
       <div className="container px-5 lg:px-10 mx-auto py-10 flex flex-col">
@@ -49,4 +49,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer2;

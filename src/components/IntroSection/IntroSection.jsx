@@ -44,10 +44,7 @@ function IntroSection() {
           </p>
         </div>
         <div className="">
-          <Button
-            className={`bg-red text-white py-3 px-8`}
-            link={calLink}
-          >
+          <Button className={`bg-red text-white py-3 px-8`} link={calLink}>
             schedule a call
           </Button>
         </div>

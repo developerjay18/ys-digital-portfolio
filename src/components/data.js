@@ -25,6 +25,29 @@ const navLinks = [
   },
 ];
 
+const navLinks2 = [
+  {
+    name: 'home',
+    slug: '/',
+  },
+  {
+    name: 'case study',
+    slug: '/',
+  },
+  {
+    name: 'services',
+    slug: '/',
+  },
+  {
+    name: 'about',
+    slug: '/',
+  },
+  {
+    name: 'contact',
+    slug: '/',
+  },
+];
+
 const logos = [
   { slug: Image.Amazon },
   { slug: Image.ADSM },
@@ -191,6 +214,14 @@ const processes = [
   },
 ];
 
-export const calLink = 'https://calendly.com/yashsharmadigital/call'
+export const calLink = 'https://calendly.com/yashsharmadigital/call';
 
-export { navLinks, logos, caseStudies, socialLinks, companies, processes };
+export {
+  navLinks,
+  logos,
+  caseStudies,
+  socialLinks,
+  companies,
+  processes,
+  navLinks2,
+};

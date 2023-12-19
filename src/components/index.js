@@ -18,8 +18,18 @@ import IntroSection from './IntroSection/IntroSection';
 import Banner from './Banner';
 import ContactSection from './ContactSection/ContactSection';
 import BurgerMenu from './BurgerMenu';
+import Header2 from './Header/Header2';
+import TnC from './TnC/TnC';
+import Footer2 from './Footer/Footer2';
+import PPolicy from './PPolicy/PPolicy';
+import ScrollToTop from './ScrollToTop';
 
 export {
+  ScrollToTop,
+  PPolicy,
+  Footer2,
+  TnC,
+  Header2,
   Header,
   Footer,
   HeroSection,

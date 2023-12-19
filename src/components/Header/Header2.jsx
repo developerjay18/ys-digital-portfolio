@@ -1,12 +1,11 @@
 import React from 'react';
 import { Logo } from '../../assets';
-import { calLink, navLinks } from '../data';
-import { Link } from 'react-scroll';
+import { calLink, navLinks2 } from '../data';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
 import { Link as RLink } from 'react-router-dom';
 
-function Header() {
+function Header2() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.menuClick);
 
@@ -28,7 +27,7 @@ function Header() {
         {/* main-header */}
         <div className="main-header px-5 lg:px-10 container mx-auto flex justify-between items-center py-3 lg:py-4 pb-12 lg:pb-0">
           {/* --logo-container */}
-          <Link to={'/'} className="w-[16%] lg:w-[5%]">
+          <RLink to={'/'} className="w-[16%] lg:w-[5%]">
             <div className="logo w-full">
               <img
                 src={Logo}
@@ -36,22 +35,15 @@ function Header() {
                 className="bg-white border-2 border-black rounded-full"
               />
             </div>
-          </Link>
+          </RLink>
           {/* --links-container */}
           <div className="links text-lg hidden lg:block">
             <ul className="flex gap-8">
-              {navLinks.map((link) => (
+              {navLinks2.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    to={link.slug}
-                    className={`capitalize cursor-pointer`}
-                    spy={true}
-                    smooth={true}
-                    // offset={-70}
-                    duration={500}
-                  >
+                  <RLink to={link.slug} className={`capitalize cursor-pointer`}>
                     {link.name}
-                  </Link>
+                  </RLink>
                 </li>
               ))}
             </ul>
@@ -82,4 +74,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header2;

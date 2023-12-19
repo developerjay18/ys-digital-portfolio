@@ -1,23 +1,23 @@
 import React from 'react';
 import {
+    BurgerMenu,
   Container,
-  Header2,
-  TnC,
   Footer,
+  Header2,
+  PPolicy,
   ScrollToTop,
-  BurgerMenu,
 } from '../../components';
 
-function TNC() {
+function PP() {
   return (
     <Container>
       <ScrollToTop />
       <Header2 />
-      <BurgerMenu />
-      <TnC />
+      <BurgerMenu/>
+      <PPolicy />
       <Footer />
     </Container>
   );
 }
 
-export default TNC;
+export default PP;
