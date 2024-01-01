@@ -23,8 +23,10 @@ import TnC from './TnC/TnC';
 import Footer2 from './Footer/Footer2';
 import PPolicy from './PPolicy/PPolicy';
 import ScrollToTop from './ScrollToTop';
+import Apply from './Apply';
 
 export {
+  Apply,
   ScrollToTop,
   PPolicy,
   Footer2,

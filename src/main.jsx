@@ -12,6 +12,7 @@ import {
 import { Home, PP, TNC } from './pages/index.js';
 import { Provider } from 'react-redux';
 import store from './store/store.js';
+import Apply from './components/Apply.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/terms-and-conditions" element={<TNC />} />
       <Route path="/privacy-policy" element={<PP />} />
+      <Route path="/apply" element={<Apply />} />
     </Route>
   )
 );
