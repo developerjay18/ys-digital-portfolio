@@ -30,7 +30,9 @@ function Header2() {
           <RLink to={'/'} className="w-[16%] lg:w-[5%]">
             <div className="logo w-full">
               <img
-                src={Logo}
+                src={
+                  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1704374737/ysd/logo_g7tfxx.svg'
+                }
                 alt="logo"
                 className="bg-white border-2 border-black rounded-full"
               />

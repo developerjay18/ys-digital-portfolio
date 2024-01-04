@@ -214,7 +214,7 @@ const processes = [
   },
 ];
 
-export const calLink = 'https://calendly.com/yashsharmadigital/call';
+export const calLink = 'https://www.yashsharmadigital.com/apply/';
 
 export {
   navLinks,

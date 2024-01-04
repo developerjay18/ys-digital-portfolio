@@ -19,10 +19,7 @@ function HeroSection() {
             helping businesses generate more profit using digital marketing.
           </p>
           <div className="buttons flex gap-5 items-center">
-            <Button
-              className={`bg-red px-7 py-3 text-white`}
-              link={calLink}
-            >
+            <Button className={`bg-red px-7 py-3 text-white`} link={calLink}>
               schedule a call
             </Button>
             <Link to={'case-study'}>
@@ -37,7 +34,9 @@ function HeroSection() {
         <div className="image lg:w-1/2 h-[55vh] lg:min-h-[84vh] lg:overflow-hidden relative">
           <div className="w-full h-full absolute">
             <img
-              src={HeroImg}
+              src={
+                'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1704374691/ysd/hero-image_uwhcpe.svg'
+              }
               alt="hero-image"
               className="mx-auto lg:w-[80%] lg:-mt-[4rem] z-10"
             />
