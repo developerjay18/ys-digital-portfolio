@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const ApplyPage = () => {
-  useEffect(() => {
-    // Redirect to "https://www.google.com"
-    window.location.href = 'https://contactyash2004.systeme.io/video';
-  }, []); // The empty dependency array ensures that this effect runs only once
-
-  // Return null or a loading indicator while the redirection is happening
-  return null;
+  return (
+    <>
+      <h1>apply page development started...</h1>
+    </>
+  );
 };
 
 export default ApplyPage;
