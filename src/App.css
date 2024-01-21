@@ -8,6 +8,40 @@
   background-size: cover;
   background-position: center;
 }
+.bg-landing-page {
+  background-image: url('https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718334/ysd/f6ftgo4wuppvscu85jcu.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-landing-page-black {
+  background-image: url('https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718331/ysd/ntuc7io6gm5o67f7aqzu.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
 
 /* slider CSS code */
 .slider {
