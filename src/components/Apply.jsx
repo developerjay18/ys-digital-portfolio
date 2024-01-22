@@ -35,7 +35,7 @@ const ApplyPage = () => {
   return (
     <div className="font-poppins max-w-screen overflow-hidden">
       {/* hero  */}
-      <div className="hero lg:pl-28 px-5 lg:px-0 pt-20 lg:pt-0 flex flex-col lg:flex-row relative font-poppins bg-landing-page justify-center items-center">
+      <div className="hero lg:pl-28 px-5 lg:px-0 pt-20 lg:pt-0 flex flex-col lg:flex-row relative font-poppins bg-landing-page ">
         {/* right  */}
         <div className="right lg:w-[60%] top-[30%] lg:absolute text-white flex flex-col justify-center gap-5">
           <h1 className="text-4xl lg:text-5xl text-center lg:text-left lg:leading-[4rem] font-bold">
@@ -70,7 +70,7 @@ const ApplyPage = () => {
             src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705912670/ysd/tyuzdr7oype1w0xax6i3.png"
             alt=""
           />
-          <div className="bg-white text-black right-5 bottom-5 lg:bottom-20 lg:px-24 text-lg font-semibold lg:max-w-[80%] px-4 py-5 text-center absolute">
+          <div className="bg-white text-black right-12 bottom-5 lg:bottom-20 lg:px-24 text-lg font-semibold lg:max-w-[80%] px-4 py-5 text-center absolute">
             Yash Sharma : Digital Marketer
           </div>
         </div>
