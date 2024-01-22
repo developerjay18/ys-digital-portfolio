@@ -21,7 +21,7 @@ function ThankYou() {
   }, []);
 
   return (
-    <div className="min-h-screen font-poppins bg-[#e8e8e8] flex flex-col justify-center items-center gap-10 py-20 px-5 lg:px-0">
+    <div className="min-h-screen font-poppins bg-[#e8e8e8] flex flex-col justify-center items-center gap-10 lg:py-20 px-5 lg:px-0">
       <div className="text-4xl lg:text-5xl font-semibold text-center">
         Great! It seems you are an action-taker.
       </div>
@@ -29,7 +29,7 @@ function ThankYou() {
       {/* video  */}
       <div className="lg:w-[60%] w-[95%]">
         <div
-          className="wistia_responsive_padding border-[10px] rounded-xl"
+          className="wistia_responsive_padding rounded-xl"
           style={{ padding: '56.25% 0 0 0', position: 'relative' }}
         >
           <div

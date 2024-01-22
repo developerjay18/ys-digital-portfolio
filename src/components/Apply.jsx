@@ -10,6 +10,7 @@ import {
   offerData,
   offerData2,
 } from './applyData.js';
+import { Link } from 'react-router-dom';
 
 const ApplyPage = () => {
   useEffect(() => {
@@ -41,22 +42,35 @@ const ApplyPage = () => {
             Grow Your Service - Based Business With Facebook Ads
           </h1>
           <div className="cta">
-            <button className=" text-xl lg:text-2xl bg-[#0D65D6] px-3 py-4">
-              Claim A FREE Facebook Ads Trial
-            </button>
+            <Link to={'/apply/form'}>
+              <button className=" text-xl lg:text-2xl bg-[#0D65D6] px-3 py-4">
+                Claim A FREE Facebook Ads Trial
+              </button>
+            </Link>
           </div>
           <div className="text-[#6f6f6f] text-center lg:text-left">
             Limited Slots Available!
           </div>
         </div>
         {/* left  */}
-        <div className="left lg:w-[52%] ml-auto text-white">
+        <div className="left hidden lg:block lg:w-[52%] ml-auto text-white">
           <img
             src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705757942/ysd/alizqfpsx1ylhxtokzaj.png"
             alt=""
             className="ml-auto"
           />
           <div className="bg-white text-black right-0 bottom-5 lg:bottom-20 lg:px-24 text-lg font-semibold lg:max-w-[80%] px-4 py-5 text-center absolute">
+            Yash Sharma : Digital Marketer
+          </div>
+        </div>
+
+        {/* left */}
+        <div className="left-mobile pt-8 block lg:hidden text-white">
+          <img
+            src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705912670/ysd/tyuzdr7oype1w0xax6i3.png"
+            alt=""
+          />
+          <div className="bg-white text-black right-12 bottom-5 lg:bottom-20 lg:px-24 text-lg font-semibold lg:max-w-[80%] px-4 py-5 text-center absolute">
             Yash Sharma : Digital Marketer
           </div>
         </div>
@@ -76,7 +90,7 @@ const ApplyPage = () => {
           </span>
         </div>
         <div
-          className="wistia_responsive_padding border-[10px] rounded-xl"
+          className="wistia_responsive_padding rounded-xl"
           style={{ padding: '56.25% 0 0 0', position: 'relative' }}
         >
           <div
@@ -123,9 +137,11 @@ const ApplyPage = () => {
           </div>
         </div>
         <div className="cta pt-7">
-          <button className=" text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
-            Claim A FREE Facebook Ads Trial
-          </button>
+          <Link to={'/apply/form'}>
+            <button className=" text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
+              Claim A FREE Facebook Ads Trial
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -215,9 +231,11 @@ const ApplyPage = () => {
           </div>
         </div>
         <div className="cta mx-5 lg:mx-auto justify-center flex">
-          <button className="text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
-            Claim A FREE Facebook Ads Trial
-          </button>
+          <Link to={'/apply/form'}>
+            <button className="text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
+              Claim A FREE Facebook Ads Trial
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -281,9 +299,11 @@ const ApplyPage = () => {
           </div>
         </div>
         <div className="cta flex justify-center">
-          <button className="text-xl lg:text-2xl bg-[#0D65D6] px-3 py-4">
-            Claim A FREE Facebook Ads Trial
-          </button>
+          <Link to={'/apply/form'}>
+            <button className="text-xl lg:text-2xl bg-[#0D65D6] px-3 py-4">
+              Claim A FREE Facebook Ads Trial
+            </button>
+          </Link>
         </div>
       </div>
 
