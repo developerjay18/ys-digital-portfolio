@@ -38,7 +38,7 @@ const ApplyPage = () => {
         {/* right  */}
         <div className="right lg:w-[60%] top-[30%] lg:absolute text-white flex flex-col justify-center gap-5">
           <h1 className="text-4xl lg:text-5xl text-center lg:text-left lg:leading-[4rem] font-bold">
-            Grow Your Service Based Business With Facebook Ads
+            Grow Your Service - Based Business With Facebook Ads
           </h1>
           <div className="cta">
             <button className=" text-xl lg:text-2xl bg-[#0D65D6] px-3 py-4">
@@ -50,7 +50,7 @@ const ApplyPage = () => {
           </div>
         </div>
         {/* left  */}
-        <div className="left lg:w-[60%] ml-auto text-white">
+        <div className="left lg:w-[52%] ml-auto text-white">
           <img
             src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705757942/ysd/alizqfpsx1ylhxtokzaj.png"
             alt=""
@@ -64,11 +64,11 @@ const ApplyPage = () => {
 
       {/* video  */}
       <div className="video bg-[#0D65D6] text-white px-5 lg:px-28 text-center py-16 flex flex-col gap-5">
-        <div className="heading flex justify-center">
+        <div className="heading flex justify-center relative">
           <span className="text-4xl lg:text-5xl font-bold">
             Kindly Watch This Video First
           </span>
-          <span className="w-[4%] mt-5">
+          <span className="w-[12%] absolute lg:relative right-10 lg:right-0 lg:top-0 top-6 lg:w-[4%] mt-5">
             <img
               src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718330/ysd/zkza1to5blaqxxfxoqju.png"
               alt=""
@@ -122,7 +122,7 @@ const ApplyPage = () => {
             </div>
           </div>
         </div>
-        <div className="cta">
+        <div className="cta pt-7">
           <button className=" text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
             Claim A FREE Facebook Ads Trial
           </button>
@@ -130,12 +130,12 @@ const ApplyPage = () => {
       </div>
 
       {/* points  */}
-      <div className="points bg-landing-page-black text-white px-5 lg:px-28 py-20">
-        <div className="mx-auto flex justify-between flex-col lg:flex-row gap-10">
+      <div className="points min-h-screen bg-landing-page-black text-white px-5 lg:px-28 py-20 flex justify-center items-center">
+        <div className="mx-auto flex justify-between flex-col lg:flex-row gap-20 lg:gap-10">
           {/* left  */}
           <div className="left lg:w-[45%] flex flex-col gap-5">
             <div className="heading">
-              <h3 className="text-4xl pb-4 font-bold">
+              <h3 className="text-3xl lg:text-4xl pb-4 font-bold">
                 Other Ways Of Marketing
               </h3>
               <div className="liner w-[60%] h-[2px] bg-white"></div>
@@ -143,13 +143,13 @@ const ApplyPage = () => {
             <div className="point-items flex flex-col gap-3">
               {pointsData2.map((item, index) => (
                 <div className="point flex items-center gap-3" key={index}>
-                  <span className="w-[8%]">
+                  <span className="w-[6%]">
                     <img
                       src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718332/ysd/mn5kon4jambr0qsiaqyo.png"
                       alt=""
                     />
                   </span>
-                  <span className="text-2xl">{item}</span>
+                  <span className="text-lg lg:text-xl">{item}</span>
                 </div>
               ))}
             </div>
@@ -157,7 +157,7 @@ const ApplyPage = () => {
           {/* right */}
           <div className="right lg:w-[45%] flex flex-col gap-5 ">
             <div className="heading">
-              <h3 className="text-4xl pb-4 font-bold">
+              <h3 className="text-3xl lg:text-4xl pb-4 font-bold">
                 Facebook Ads Marketing
               </h3>
               <div className="liner w-[60%] h-[2px] bg-white"></div>
@@ -165,13 +165,13 @@ const ApplyPage = () => {
             <div className="point-items flex flex-col gap-3">
               {pointsData.map((item, index) => (
                 <div className="point flex items-center gap-3" key={index}>
-                  <span className="w-[8%]">
+                  <span className="w-[6%]">
                     <img
                       src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718333/ysd/ebqesvtollggb7af1b8a.png"
                       alt=""
                     />
                   </span>
-                  <span className="text-2xl">{item}</span>
+                  <span className="text-lg lg:text-xl">{item}</span>
                 </div>
               ))}
             </div>
@@ -191,7 +191,7 @@ const ApplyPage = () => {
               {businessCategories.map((item, index) => (
                 <li
                   style={{ listStyleType: 'disc' }}
-                  className="text-2xl lg:text-3xl"
+                  className="text-2xl lg:text-2xl"
                   key={index}
                 >
                   {item}
@@ -205,7 +205,7 @@ const ApplyPage = () => {
               {businessCategories2.map((item, index) => (
                 <li
                   style={{ listStyleType: 'disc' }}
-                  className="text-2xl lg:text-3xl"
+                  className="text-2xl lg:text-2xl"
                   key={index}
                 >
                   {item}
@@ -214,7 +214,7 @@ const ApplyPage = () => {
             </ul>
           </div>
         </div>
-        <div className="cta mx-5 lg:mx-auto border justify-center flex">
+        <div className="cta mx-5 lg:mx-auto justify-center flex">
           <button className="text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
             Claim A FREE Facebook Ads Trial
           </button>
@@ -222,15 +222,17 @@ const ApplyPage = () => {
       </div>
 
       {/* keywords  */}
-      <div className="keywords bg-landing-page-black text-white px-5 lg:px-28 lg:py-20 py-10">
+      <div className="keywords bg-landing-page-black text-white px-5 lg:px-28 lg:py-20 py-10 h-screen flex justify-center items-center">
         <div className="flex justify-between flex-col lg:flex-row gap-10">
           {keywordsData.map((item, index) => (
-            <div className="keyword lg:w-[30%] flex flex-col gap-3" key={index}>
-              <div className="w-[30%]">
+            <div className="keyword lg:w-[25%] flex flex-col gap-3" key={index}>
+              <div className="w-[20%] lg:w-[30%]">
                 <img src={item.imgUrl} alt="" />
               </div>
-              <div className="text-3xl font-semibold">{item.title}</div>
-              <div className="text-lg">{item.content}</div>
+              <div className="text-xl lg:text-2xl font-semibold">
+                {item.title}
+              </div>
+              <div className="lg:text-md">{item.content}</div>
             </div>
           ))}
         </div>
@@ -239,7 +241,9 @@ const ApplyPage = () => {
       {/* about-our-clients  */}
       <div className="about-clients bg-landing-page-black text-white px-5 lg:px-28 py-10 lg:py-20 flex flex-col gap-16">
         <div className="heading">
-          <div className="text-4xl lg:text-5xl pb-4 font-bold">About our clients:</div>
+          <div className="text-4xl lg:text-5xl pb-4 font-bold">
+            About our clients:
+          </div>
           <div className="liner w-[60%] h-[2px] bg-white"></div>
         </div>
         <div className="points flex flex-col lg:flex-row justify-between gap-5 lg:gap-0">
@@ -248,13 +252,13 @@ const ApplyPage = () => {
             <div className="point-items flex flex-col gap-5">
               {aboutPoints.map((item, index) => (
                 <div className="point flex gap-3" key={index}>
-                  <span className="max-w-[8%]">
+                  <span className="max-w-[6%]">
                     <img
                       src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718332/ysd/mn5kon4jambr0qsiaqyo.png"
                       alt=""
                     />
                   </span>
-                  <span className="text-2xl">{item}</span>
+                  <span className="lg:text-xl">{item}</span>
                 </div>
               ))}
             </div>
@@ -264,13 +268,13 @@ const ApplyPage = () => {
             <div className="point-items flex flex-col gap-5">
               {aboutPoints2.map((item, index) => (
                 <div className="point flex gap-3" key={index}>
-                  <span className="max-w-[8%]">
+                  <span className="max-w-[6%]">
                     <img
                       src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718332/ysd/mn5kon4jambr0qsiaqyo.png"
                       alt=""
                     />
                   </span>
-                  <span className="text-2xl">{item}</span>
+                  <span className="lg:text-xl">{item}</span>
                 </div>
               ))}
             </div>
@@ -296,7 +300,7 @@ const ApplyPage = () => {
           <div className="left lg:w-[48%] flex flex-col gap-4">
             {offerData.map((item, index) => (
               <div
-                className="point bg-black py-8 text-center text-2xl"
+                className="point bg-black py-8 text-center lg:text-xl"
                 key={index}
               >
                 {item}
@@ -307,7 +311,7 @@ const ApplyPage = () => {
           <div className="right lg:w-[48%] flex flex-col gap-4">
             {offerData2.map((item, index) => (
               <div
-                className="point bg-black py-8 text-center text-2xl"
+                className="point bg-black py-8 text-center lg:text-xl"
                 key={index}
               >
                 {item}
@@ -318,7 +322,7 @@ const ApplyPage = () => {
       </div>
 
       {/* footer */}
-      <div className="footer bg-black text-white py-14 text-center text-2xl">
+      <div className="footer bg-black text-white py-14 text-center lg:text-2xl">
         Thank You! Have A Nice Business....
       </div>
     </div>
