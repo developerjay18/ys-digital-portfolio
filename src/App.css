@@ -13,6 +13,11 @@
   background-size: cover;
   background-position: center;
 }
+.bg-form-page {
+  background-image: url('https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705981575/ysd/k7ddvxpqm4k3aq6q7yoh.png');
+  background-size: cover;
+  background-position: center;
+}
 
 .bg-landing-page-black {
   background-image: url('https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718331/ysd/ntuc7io6gm5o67f7aqzu.png');

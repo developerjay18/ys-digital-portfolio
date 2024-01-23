@@ -43,7 +43,7 @@ const ApplyPage = () => {
           </h1>
           <div className="cta">
             <Link to={'/apply/form'}>
-              <button className=" text-xl lg:text-2xl bg-[#0D65D6] px-3 py-4">
+              <button className=" text-xl lg:text-2xl bg-[#0D65D6] hover:bg-[#0d64d6c9] px-3 py-4 z-20">
                 Claim A FREE Facebook Ads Trial
               </button>
             </Link>
@@ -138,7 +138,7 @@ const ApplyPage = () => {
         </div>
         <div className="cta pt-7">
           <Link to={'/apply/form'}>
-            <button className=" text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
+            <button className=" text-xl hover:bg-[#e9e9e9] lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
               Claim A FREE Facebook Ads Trial
             </button>
           </Link>
@@ -232,7 +232,7 @@ const ApplyPage = () => {
         </div>
         <div className="cta mx-5 lg:mx-auto justify-center flex">
           <Link to={'/apply/form'}>
-            <button className="text-xl lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
+            <button className="text-xl hover:bg-[#e9e9e9] lg:text-2xl bg-[#ffffff] text-black font-semibold px-3 py-4">
               Claim A FREE Facebook Ads Trial
             </button>
           </Link>
@@ -300,7 +300,7 @@ const ApplyPage = () => {
         </div>
         <div className="cta flex justify-center">
           <Link to={'/apply/form'}>
-            <button className="text-xl lg:text-2xl bg-[#0D65D6] px-3 py-4">
+            <button className="text-xl hover:bg-[#0d64d6c9] lg:text-2xl bg-[#0D65D6] px-3 py-4">
               Claim A FREE Facebook Ads Trial
             </button>
           </Link>

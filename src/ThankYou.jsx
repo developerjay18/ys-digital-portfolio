@@ -78,9 +78,9 @@ function ThankYou() {
         </div>
       </div>
 
-      <div className="cta flex justify-center mx-auto">
-        <Link to={'https://wa.me/916351520298'}>
-          <button className="text-2xl bg-[#0D65D6] px-1 py-4 text-white flex items-center gap-5 lg:w-[50%] justify-center">
+      <div className="cta flex justify-center  mx-auto">
+        <Link to={'https://wa.me/916351520298'} className="flex justify-center">
+          <button className="text-2xl hover:bg-[#0d64d6c9] bg-[#0D65D6] px-1 py-4 text-white flex items-center gap-5 lg:w-[50%] justify-center">
             <div className="w-[10%]">
               <img
                 src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718331/ysd/akfgzaqv46enasonn6xi.png"

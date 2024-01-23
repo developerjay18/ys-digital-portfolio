@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 function ApplyForm() {
   const form = useRef();
   const navigate = useNavigate();
+  const scriptUrl =
+    'https://script.google.com/macros/s/AKfycbwJvR16SdejLKHaLcB87WgrjYRdLnkmBN5XncidWFxdmRyFlPM7_XNjSwIixRgv0sPZsA/exec';
 
   const [data, setData] = useState({
     name: '',
@@ -20,6 +22,12 @@ function ApplyForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    fetch(scriptUrl, { method: 'POST', body: new FormData(form.current) })
+      .then((res) => {
+        console.log('SUCCESSFULLY SUBMITTED', res);
+      })
+      .catch((err) => console.log(err));
 
     emailjs
       .sendForm(
@@ -45,9 +53,8 @@ function ApplyForm() {
 
     navigate('/apply/greeting');
   };
-
   return (
-    <div className="font-poppins bg-black min-h-screen flex justify-center items-center">
+    <div className="font-poppins bg-form-page min-h-screen flex justify-center items-center">
       {/* form  */}
       <form
         method="post"
@@ -98,7 +105,7 @@ function ApplyForm() {
           <div className="cta">
             <button
               type="submit"
-              className="text-xl text-white bg-[#0D65D6] px-3 py-4 w-full"
+              className="text-xl hover:bg-[#0d64d6c9] text-white bg-[#0D65D6] px-3 py-4 w-full"
             >
               Submit Now
             </button>
