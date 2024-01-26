@@ -70,7 +70,7 @@ const ApplyPage = () => {
             src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705912670/ysd/tyuzdr7oype1w0xax6i3.png"
             alt=""
           />
-          <div className="bg-white text-black right-6 bottom-5 lg:bottom-20 lg:px-24 text-lg font-semibold lg:max-w-[80%] px-4 py-5 text-center absolute">
+          <div className="bg-white text-black right-10 bottom-5 lg:bottom-20 lg:px-24 text-lg font-semibold lg:max-w-[80%] px-4 py-5 text-center absolute">
             Yash Sharma : Digital Marketer
           </div>
         </div>
