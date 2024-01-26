@@ -5,7 +5,7 @@ function ThankYou() {
   useEffect(() => {
     // Include the Wistia scripts
     const script1 = document.createElement('script');
-    script1.src = 'https://fast.wistia.com/embed/medias/7hwr4rwq58.jsonp';
+    script1.src = 'https://fast.wistia.com/embed/medias/6leoky1io4.jsonp';
     script1.async = true;
     document.body.appendChild(script1);
 
@@ -30,7 +30,7 @@ function ThankYou() {
       {/* video  */}
       <div className="lg:w-[60%] w-[95%]">
         <div
-          className="wistia_responsive_padding rounded-xl"
+          className="wistia_responsive_padding"
           style={{ padding: '56.25% 0 0 0', position: 'relative' }}
         >
           <div
@@ -44,7 +44,7 @@ function ThankYou() {
             }}
           >
             <div
-              className="wistia_embed wistia_async_7hwr4rwq58 seo=true videoFoam=true"
+              className="wistia_embed wistia_async_6leoky1io4 seo=true videoFoam=true"
               style={{ height: '100%', position: 'relative', width: '100%' }}
             >
               <div
@@ -61,7 +61,7 @@ function ThankYou() {
                 }}
               >
                 <img
-                  src="https://fast.wistia.com/embed/medias/7hwr4rwq58/swatch"
+                  src="https://fast.wistia.com/embed/medias/6leoky1io4/swatch"
                   style={{
                     filter: 'blur(5px)',
                     height: '100%',

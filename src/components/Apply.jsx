@@ -16,7 +16,7 @@ const ApplyPage = () => {
   useEffect(() => {
     // Include the Wistia scripts
     const script1 = document.createElement('script');
-    script1.src = 'https://fast.wistia.com/embed/medias/7hwr4rwq58.jsonp';
+    script1.src = 'https://fast.wistia.com/embed/medias/2sctxanq3z.jsonp';
     script1.async = true;
     document.body.appendChild(script1);
 
@@ -41,7 +41,7 @@ const ApplyPage = () => {
           <h1 className="text-4xl lg:text-5xl text-center lg:text-left lg:leading-[4rem] font-bold">
             Grow Your Service - Based Business With Facebook Ads
           </h1>
-          <div className="cta">
+          <div className="cta ml-5">
             <Link to={'/apply/form'}>
               <button className=" text-xl lg:text-2xl bg-[#0D65D6] hover:bg-[#0d64d6c9] px-3 py-4 z-20">
                 Claim A FREE Facebook Ads Trial
@@ -90,7 +90,7 @@ const ApplyPage = () => {
           </span>
         </div>
         <div
-          className="wistia_responsive_padding rounded-xl"
+          className="wistia_responsive_padding"
           style={{ padding: '56.25% 0 0 0', position: 'relative' }}
         >
           <div
@@ -104,7 +104,7 @@ const ApplyPage = () => {
             }}
           >
             <div
-              className="wistia_embed wistia_async_7hwr4rwq58 seo=true videoFoam=true"
+              className="wistia_embed wistia_async_2sctxanq3z seo=true videoFoam=true"
               style={{ height: '100%', position: 'relative', width: '100%' }}
             >
               <div
@@ -121,7 +121,7 @@ const ApplyPage = () => {
                 }}
               >
                 <img
-                  src="https://fast.wistia.com/embed/medias/7hwr4rwq58/swatch"
+                  src="https://fast.wistia.com/embed/medias/2sctxanq3z/swatch"
                   style={{
                     filter: 'blur(5px)',
                     height: '100%',
