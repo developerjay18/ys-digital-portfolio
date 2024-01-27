@@ -152,7 +152,7 @@ const ApplyPage = () => {
           <div className="left lg:w-[45%] flex flex-col gap-5">
             <div className="heading">
               <h3 className="text-3xl lg:text-4xl pb-4 font-bold">
-                Other Ways Of Marketing
+                Facebook Ads Marketing
               </h3>
               <div className="liner w-[60%] h-[2px] bg-white"></div>
             </div>
@@ -161,7 +161,7 @@ const ApplyPage = () => {
                 <div className="point flex items-center gap-3" key={index}>
                   <span className="w-[6%]">
                     <img
-                      src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718332/ysd/mn5kon4jambr0qsiaqyo.png"
+                      src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718333/ysd/ebqesvtollggb7af1b8a.png"
                       alt=""
                     />
                   </span>
@@ -174,7 +174,7 @@ const ApplyPage = () => {
           <div className="right lg:w-[45%] flex flex-col gap-5 ">
             <div className="heading">
               <h3 className="text-3xl lg:text-4xl pb-4 font-bold">
-                Facebook Ads Marketing
+                Other Ways Of Marketing
               </h3>
               <div className="liner w-[60%] h-[2px] bg-white"></div>
             </div>
@@ -183,7 +183,7 @@ const ApplyPage = () => {
                 <div className="point flex items-center gap-3" key={index}>
                   <span className="w-[6%]">
                     <img
-                      src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718333/ysd/ebqesvtollggb7af1b8a.png"
+                      src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1705718332/ysd/mn5kon4jambr0qsiaqyo.png"
                       alt=""
                     />
                   </span>
