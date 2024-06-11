@@ -6,7 +6,7 @@ function VideoSection() {
   useEffect(() => {
     // Include the Wistia scripts
     const script1 = document.createElement('script');
-    script1.src = 'https://fast.wistia.com/embed/medias/2sctxanq3z.jsonp';
+    script1.src = 'https://fast.wistia.com/embed/medias/w60zfp2qkz.jsonp';
     script1.async = true;
     document.body.appendChild(script1);
 
@@ -50,7 +50,7 @@ function VideoSection() {
               }}
             >
               <div
-                className="wistia_embed wistia_async_2sctxanq3z seo=true videoFoam=true"
+                className="wistia_embed wistia_async_w60zfp2qkz seo=true videoFoam=true"
                 style={{ height: '100%', position: 'relative', width: '100%' }}
               >
                 <div
@@ -67,7 +67,7 @@ function VideoSection() {
                   }}
                 >
                   <img
-                    src="https://fast.wistia.com/embed/medias/2sctxanq3z/swatch"
+                    src="https://fast.wistia.com/embed/medias/w60zfp2qkz/swatch"
                     style={{
                       filter: 'blur(5px)',
                       height: '100%',

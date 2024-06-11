@@ -33,7 +33,6 @@ function Home() {
       <HeroSection />
       <MovingSlider links={companies} heading={`worked with`} />
       <VideoSection /> {/*11-06-2024*/}
-      <BookSection />
       <ProcessSection />
       <Overview />
       <DetailOverview />
