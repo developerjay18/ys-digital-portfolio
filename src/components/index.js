@@ -24,8 +24,10 @@ import Footer2 from './Footer/Footer2';
 import PPolicy from './PPolicy/PPolicy';
 import ScrollToTop from './ScrollToTop';
 import Apply from './Apply';
+import VideoSection from './VideoSection/VideoSection';
 
 export {
+  VideoSection,
   Apply,
   ScrollToTop,
   PPolicy,

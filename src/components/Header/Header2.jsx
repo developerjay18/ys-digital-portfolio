@@ -1,5 +1,4 @@
 import React from 'react';
-import { Logo } from '../../assets';
 import { calLink, navLinks2 } from '../data';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
@@ -13,7 +12,7 @@ function Header2() {
   return (
     <header className="z-20">
       <div className="mx-auto">
-        {/* offer bar */}
+        {/* offer bar
         <div className="offerbar capitalize bg-black text-white hidden lg:flex justify-center items-center py-2 text-lg gap-5 lg:gap-10 mt-5 flex-col lg:flex-row px-5 lg:px-0">
           <span className="text-center">
             grab your 7 day free trial : valid only for next 3 days
@@ -23,7 +22,7 @@ function Header2() {
               claim now
             </button>
           </RLink>
-        </div>
+        </div> */}
         {/* main-header */}
         <div className="main-header px-5 lg:px-10 container mx-auto flex justify-between items-center py-3 lg:py-4 pb-12 lg:pb-0">
           {/* --logo-container */}

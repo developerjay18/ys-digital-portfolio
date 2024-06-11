@@ -19,6 +19,7 @@ import {
   Footer,
   BurgerMenu,
   ScrollToTop,
+  VideoSection,
 } from '../../components';
 import { logos, companies } from '../../components/data';
 import { Group } from '../../assets';
@@ -31,6 +32,7 @@ function Home() {
       <BurgerMenu /> {/*visibles oly when user toggle burger menu*/}
       <HeroSection />
       <MovingSlider links={companies} heading={`worked with`} />
+      <VideoSection /> {/*11-06-2024*/}
       <BookSection />
       <ProcessSection />
       <Overview />
