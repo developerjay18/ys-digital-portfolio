@@ -15,6 +15,7 @@ import store from './store/store.js';
 import Apply from './components/Apply.jsx';
 import ApplyForm from './components/ApplyForm.jsx';
 import ThankYou from './ThankYou.jsx';
+import Onboarding from './pages/Onboarding/Onboarding.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/apply" element={<Apply />} />
       <Route path="/apply/form" element={<ApplyForm />} />
       <Route path="/apply/greeting" element={<ThankYou />} />
+      <Route path="/join" element={<Onboarding />} />
     </Route>
   )
 );

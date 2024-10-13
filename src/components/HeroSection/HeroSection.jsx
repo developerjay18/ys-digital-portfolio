@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../index';
-import { HeroCircle, HeroImg, LeftArrow, RightArrow } from '../../assets';
+import { HeroCircle, LeftArrow, RightArrow } from '../../assets';
 import { Link } from 'react-scroll';
 import { calLink } from '../data';
 

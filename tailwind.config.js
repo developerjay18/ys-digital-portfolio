@@ -7,6 +7,7 @@ export default {
       black: '#000000',
       red: '#ff0000',
       lightGrey: '#e9e9e9',
+      themeBlue: '#004aad',
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
