@@ -16,6 +16,7 @@ import Apply from './components/Apply.jsx';
 import ApplyForm from './components/ApplyForm.jsx';
 import ThankYou from './ThankYou.jsx';
 import Onboarding from './pages/Onboarding/Onboarding.jsx';
+import JoinThanks from './pages/Onboarding/JoinThanks.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/apply/form" element={<ApplyForm />} />
       <Route path="/apply/greeting" element={<ThankYou />} />
       <Route path="/join" element={<Onboarding />} />
+      <Route path="/join/thankyou" element={<JoinThanks />} />
     </Route>
   )
 );

@@ -7,6 +7,7 @@ import StepFive from '../../components/Steps/StepFive';
 import StepSix from '../../components/Steps/StepSix';
 import StepSeven from '../../components/Steps/StepSeven';
 import StepEight from '../../components/Steps/StepEight';
+import StepNine from '../../components/Steps/StepNine';
 
 const OnboardingForm = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -73,10 +74,16 @@ const OnboardingForm = () => {
       setSelection={(data) => setSelection(7, data)}
     />,
     <StepEight
-      key={7}
+      key={8}
       nextStep={nextStep}
       prevStep={prevStep}
-      setSelection={(data) => setSelection(7, data)}
+      setSelection={(data) => setSelection(8, data)}
+    />,
+    <StepNine
+      key={9}
+      nextStep={nextStep}
+      prevStep={prevStep}
+      setSelection={(data) => setSelection(9, data)}
     />,
   ];
 
