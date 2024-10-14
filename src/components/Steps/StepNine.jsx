@@ -7,63 +7,55 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
   const form = useRef();
   const navigate = useNavigate();
   const state = useSelector((state) => state.join);
-  const scriptUrl =
-    'https://script.google.com/macros/s/AKfycbwPO0AQ3kaqYUZDPJvC4Gk-H9QyCjv-77d6Spa2_ELwvNZEUyTyLxWdMgWnr7v8mMwC/exec';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData();
+    console.log(state.runAdsBefore);
+    await axios
+      .post(
+        'https://api.sheetbest.com/sheets/5aa20e07-e86d-47c5-bc6c-57916455f70d',
+        {
+          RunAdsBefore: state.runAdsBefore === true ? 'TRUE' : 'FALSE',
+          Type: state.businessType,
+          Description: state.businessDescription,
+          WantGMB: state.selectedOptions.googleMyBusiness,
+          WantSMM: state.selectedOptions.socialMediaMarketing,
+          WantExtraLeads: state.selectedOptions.leads,
+          ExtraLeadsCounts: state.selectedOptions.leadsCount,
+          WantExtraViews: state.selectedOptions.views,
+          ExtraViewsCounts: state.selectedOptions.viewsCount,
+          OwnerName: form.current.OwnerName.value,
+          Gender: form.current.Gender.value,
+          Birthdate: form.current.Birthdate.value,
+          Name: form.current.Name.value,
+          Email: form.current.Email.value,
+          ContactNumber: form.current.ContactNumber.value,
+          ContactNumber2: form.current.ContactNumber2.value,
+          Whatsapp: form.current.Whatsapp.value,
+          LongAddress: form.current.LongAddress.value,
+          ShortAddress: form.current.ShortAddress.value,
+          BusinessHours: form.current.BusinessHours.value,
+          Tagline: form.current.Tagline.value,
+          Website: form.current.Website.value,
+          Goal: form.current.Goal.value,
+          Products: form.current.Products.value,
+          Customers: form.current.Customers.value,
+          Language: form.current.Language.value,
+          Uniqueness: form.current.Uniqueness.value,
+          Competitior: form.current.Competitior.value,
+          ServeOutside: form.current.ServeOutside.value,
+          Highlights: form.current.Highlights.value,
+          FbNumber: form.current.FbNumber.value,
+          FbPasswords: form.current.FbPasswords.value,
+          InstaNumber: form.current.InstaNumber.value,
+          InstaPasswords: form.current.InstaPasswords.value,
+          MailPassword: form.current.MailPassword.value,
+        }
+      )
+      .then((res) => console.log(res));
 
-    formData.append('RunAdsBefore', state.runAdsBefore);
-    formData.append('Type', state.businessType);
-    formData.append('Description', state.businessDescription);
-    formData.append('WantGMB', state.selectedOptions.googleMyBusiness);
-    formData.append('WantSMM', state.selectedOptions.socialMediaMarketing);
-    formData.append('WantExtraLeads', state.selectedOptions.leads);
-    formData.append('ExtraLeadsCounts', state.selectedOptions.leadsCount);
-    formData.append('WantExtraViews', state.selectedOptions.views);
-    formData.append('ExtraViewsCounts', state.selectedOptions.viewsCount);
-    formData.append('OwnerName', form.current.name.value);
-    formData.append('Gender', form.current.gender.value);
-    formData.append('Birthdate', form.current.birthdate.value);
-    formData.append('Name', form.current.businessName.value);
-    formData.append('Email', form.current.eemail.value);
-    formData.append('ContactNumber', form.current.contact.value);
-    formData.append('ContactNumber2', form.current.contactTwo.value);
-    formData.append('Whatsapp', form.current.whatsappNumber.value);
-    formData.append('LongAddress', form.current.longAddress.value);
-    formData.append('ShortAddress', form.current.shortAddress.value);
-    formData.append('BusinessHours', form.current.businessHours.value);
-    formData.append('Tagline', form.current.tagline.value);
-    formData.append('Website', form.current.website.value);
-    formData.append('Goal', form.current.goal.value);
-    formData.append('Products', form.current.product.value);
-    formData.append('Customers', form.current.customer.value);
-    formData.append('Language', form.current.language.value);
-    formData.append('Uniqueness', form.current.uniqueness.value);
-    formData.append('Competitior', form.current.competitor.value);
-    formData.append('ServeOutside', form.current.serveOutside.value);
-    formData.append('Highlights', form.current.highlights.value);
-    formData.append('FbNumber', form.current.fbNumber.value);
-    formData.append('FbPasswords', form.current.fbPassword.value);
-    formData.append('InstaNumber', form.current.instaNumber.value);
-    formData.append('InstaPasswords', form.current.instaPassword.value);
-    formData.append('MailPassword', form.current.mailPassword.value);
-    formData.append('Photo', 'NAN');
-    formData.append('Logo', 'NAN');
-    formData.append('Lightbill', 'NAN');
-
-    fetch(scriptUrl, {
-      method: 'POST',
-      body: formData,
-    })
-      .then((res) => {
-        console.log('SUCCESSFULLY SUBMITTED', res);
-      })
-      .catch((err) => console.log(err));
-
-    navigate('/join/thankyou'); // make this live after completion of all process
+    navigate('/join/thankyou');
   };
 
   return (
@@ -80,22 +72,22 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
         {/* options  */}
         <div className="videos mt-8 lg:mx-16 flex justify-center gap-x-8">
           <div className="w-[90%] flex flex-col justify-center">
-            <form action="#" method="post" onSubmit={handleSubmit} ref={form}>
+            <form method="post" onSubmit={handleSubmit} ref={form}>
               <h2 className="mb-2 font-semibold text-xl">1. Contact Details</h2>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="OwnerName"
+                id="OwnerName"
                 placeholder="Name"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <h3 className="text-lg font-semibold mt-2">Gender</h3>
-              <label htmlFor="gender" className="flex gap-x-6">
+              <label htmlFor="Gender" className="flex gap-x-6">
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="gender"
-                    id="gender"
+                    name="Gender"
+                    id="Gender"
                     value={'male'}
                   />
                   <span>Male</span>
@@ -104,8 +96,8 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="gender"
-                    id="gender"
+                    name="Gender"
+                    id="Gender"
                     value={'female'}
                   />
                   <span>Female</span>
@@ -113,79 +105,79 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </label>
               <input
                 type="text"
-                name="birthdate"
-                id="birthdate"
+                name="Birthdate"
+                id="Birthdate"
                 placeholder="Birth Date"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="businessName"
-                id="businessName"
+                name="Name"
+                id="Name"
                 placeholder="Business Full Name"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="eemail"
-                id="eemail"
+                name="Email"
+                id="Email"
                 placeholder="Business Mail"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="contact"
-                id="contact"
+                name="ContactNumber"
+                id="ContactNumber"
                 placeholder="Business Contact Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="contactTwo"
-                id="contactTwo"
+                name="ContactNumber2"
+                id="ContactNumber2"
                 placeholder="Business Contact Number 2"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="whatsappNumber"
-                id="whatsappNumber"
+                name="Whatsapp"
+                id="Whatsapp"
                 placeholder="Active Whatsapp Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <p>Note: This Number not should be your main Number.</p>
               <input
                 type="text"
-                name="longAddress"
-                id="longAddress"
+                name="LongAddress"
+                id="LongAddress"
                 placeholder="Business Full Address With Pincode"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="shortAddress"
-                id="shortAddress"
+                name="ShortAddress"
+                id="ShortAddress"
                 placeholder="Business Short Address"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="businessHours"
-                id="businessHours"
+                name="BusinessHours"
+                id="BusinessHours"
                 placeholder="Business Hours"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="tagline"
-                id="tagline"
+                name="Tagline"
+                id="Tagline"
                 placeholder="Business Tagline"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="website"
-                id="website"
+                name="Website"
+                id="Website"
                 placeholder="Business Website"
                 className="border-b px-3 py-2 w-full my-2"
               />
@@ -196,35 +188,35 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
                 What&apos;s Your Business Goal?
               </h3>
               <label
-                htmlFor="goal"
+                htmlFor="Goal"
                 className="flex flex-col lg:flex-row gap-x-6"
               >
                 <div className="flex items-center gap-x-2">
-                  <input type="radio" name="goal" id="goal" value={'leads'} />
+                  <input type="radio" name="Goal" id="Goal" value={'leads'} />
                   <span>Leads</span>
                 </div>
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="goal"
-                    id="goal"
+                    name="Goal"
+                    id="Goal"
                     value={'visitors'}
                   />
                   <span>Visitors</span>
                 </div>
                 <div className="flex items-center gap-x-2">
-                  <input type="radio" name="goal" id="goal" value={'calls'} />
+                  <input type="radio" name="Goal" id="Goal" value={'calls'} />
                   <span>Calls</span>
                 </div>
                 <div className="flex items-center gap-x-2">
-                  <input type="radio" name="goal" id="goal" value={'orders'} />
+                  <input type="radio" name="Goal" id="Goal" value={'orders'} />
                   <span>Orders</span>
                 </div>
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="goal"
-                    id="goal"
+                    name="Goal"
+                    id="Goal"
                     value={'awareness'}
                   />
                   <span>Awareness</span>
@@ -232,48 +224,48 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </label>
               <input
                 type="text"
-                name="product"
-                id="product"
+                name="Products"
+                id="Products"
                 placeholder="What products or services does your business offer?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="customer"
-                id="customer"
+                name="Customers"
+                id="Customers"
                 placeholder="Who are your customers?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="language"
-                id="language"
+                name="Language"
+                id="Language"
                 placeholder="What languages do your customers prefer?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="uniqueness"
-                id="uniqueness"
+                name="Uniqueness"
+                id="Uniqueness"
                 placeholder="What makes your business unique compared to competitors?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="competitor"
-                id="competitor"
+                name="Competitior"
+                id="Competitior"
                 placeholder="Who is your biggest competitor?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <h3 className="text-lg font-semibold mt-2">
                 Do you serve areas outside your location?
               </h3>
-              <label htmlFor="serveOutside" className="flex gap-x-6">
+              <label htmlFor="ServeOutside" className="flex gap-x-6">
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="serveOutside"
-                    id="serveOutside"
+                    name="ServeOutside"
+                    id="ServeOutside"
                     value={'yes'}
                   />
                   <span>Yes</span>
@@ -281,8 +273,8 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="serveOutside"
-                    id="serveOutside"
+                    name="ServeOutside"
+                    id="ServeOutside"
                     value={'no'}
                   />
                   <span>No</span>
@@ -290,8 +282,8 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </label>
               <input
                 type="text"
-                name="highlights"
-                id="highlights"
+                name="Highlights"
+                id="Highlights"
                 placeholder="Is there anything specific you want to highlight about your business?"
                 className="border-b px-3 py-2 w-full my-2"
               />
@@ -300,36 +292,36 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </h2>
               <input
                 type="text"
-                name="fbNumber"
-                id="fbNumber"
+                name="FbNumber"
+                id="FbNumber"
                 placeholder="Personal Facebook ID/ Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="fbPassword"
-                id="fbPassword"
+                name="FbPasswords"
+                id="FbPasswords"
                 placeholder="Personal Facebook Password"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="instaNumber"
-                id="instaNumber"
+                name="InstaNumber"
+                id="InstaNumber"
                 placeholder="Instagram ID/ Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="instaPassword"
-                id="instaPassword"
+                name="InstaPasswords"
+                id="InstaPasswords"
                 placeholder="Instagram Password"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="mailPassword"
-                id="mailPassword"
+                name="MailPassword"
+                id="MailPassword"
                 placeholder="Mail Password (Only fill if you want to register on Google)"
                 className="border-b px-3 py-2 w-full my-2"
               />

@@ -26,6 +26,7 @@ const OnboardingForm = () => {
   const setSelection = (step, selection) => {
     console.log(selection);
     if (step === 2) {
+      console.log(selection, 'from onboarding');
       dispatch(enterrunAdsBefore(selection));
     } else if (step === 3) {
       dispatch(enterBusinessType(selection));
