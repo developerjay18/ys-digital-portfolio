@@ -64,60 +64,78 @@ const OnboardingForm = () => {
 
   // All steps stored in an array for easy navigation
   const steps = [
-    <StepOne
-      key={1}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(1, data)}
-    />,
-    <StepTwo
-      key={2}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(2, data)}
-    />,
-    <StepThree
-      key={3}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(3, data)}
-    />,
-    <StepFour
-      key={4}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(4, data)}
-    />,
-    <StepFive
-      key={5}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(5, data)}
-    />,
-    <StepSix
-      key={6}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(6, data)}
-    />,
-    <StepSeven
-      key={7}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(7, data)}
-    />,
-    <StepEight
-      key={8}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(8, data)}
-    />,
-    <StepNine
-      key={9}
-      nextStep={nextStep}
-      prevStep={prevStep}
-      setSelection={(data) => setSelection(9, data)}
-    />,
+    <div key={1} className="slide-in-left">
+      <StepOne
+        key={1}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(1, data)}
+      />
+    </div>,
+    <div key={2} className="slide-in-left">
+      <StepTwo
+        key={2}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(2, data)}
+      />
+    </div>,
+    <div key={3} className="slide-in-left">
+      <StepThree
+        key={3}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(3, data)}
+      />
+    </div>,
+    <div key={4} className="slide-in-left">
+      <StepFour
+        key={4}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(4, data)}
+      />
+    </div>,
+    <div key={5} className="slide-in-left">
+      <StepFive
+        key={5}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(5, data)}
+      />
+    </div>,
+    <div key={6} className="slide-in-left">
+      <StepSix
+        key={6}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(6, data)}
+      />
+    </div>,
+    <div key={7} className="slide-in-left">
+      <StepSeven
+        key={7}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(7, data)}
+      />
+    </div>,
+    <div key={8} className="slide-in-left">
+      <StepEight
+        key={8}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(8, data)}
+      />
+    </div>,
+    <div key={9} className="slide-in-left">
+      <StepNine
+        key={9}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        setSelection={(data) => setSelection(9, data)}
+      />
+    </div>,
   ];
 
   return (
@@ -130,9 +148,7 @@ const OnboardingForm = () => {
           <h1>Get More Customers, Inquiries, Leads, Visitors & Revenue!</h1>
         </div>
       </header>
-      <div className="min-h-[84vh] pt-4">
-      {steps[currentStep]}
-      </div>
+      <div className="min-h-[84vh] pt-4">{steps[currentStep]}</div>
     </div>
   );
 };

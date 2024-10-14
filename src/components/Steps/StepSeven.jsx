@@ -200,10 +200,10 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
       </div>
 
       {/* action buttons  */}
-      <div className="bg-themeBlue flex justify-between text-white py-3 px-5 lg:px-16">
+      <div className="bg-themeBlue flex flex-col lg:flex-row gap-y-4 justify-between text-white py-3 px-5 lg:px-16">
         <div className="flex items-center">
           <button
-            className="text-xl flex items-center justify-center ml-auto gap-x-2"
+            className="text-xl flex items-center justify-center mx-auto lg:ml-auto gap-x-2"
             onClick={prevStep}
           >
             Previous{' '}
@@ -216,7 +216,15 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
         </div>
         <div className="flex items-center">
           <button
-            className="text-xl flex items-center justify-center ml-auto gap-x-2"
+            className="lg:text-lg border lg:px-3 rounded-full flex items-center justify-center ml-auto gap-x-2"
+            onClick={handleNext}
+          >
+            Skip, I just want to go with basic package!
+          </button>
+        </div>
+        <div className="flex items-center">
+          <button
+            className="text-xl flex items-center justify-center mx-auto lg:ml-auto gap-x-2"
             onClick={handleNext}
           >
             Next{' '}

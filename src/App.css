@@ -99,3 +99,19 @@
 .join-shadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+/* Add this CSS in your global CSS file or the component's CSS file */
+.slide-in-left {
+  animation: slideInLeft 0.5s forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
