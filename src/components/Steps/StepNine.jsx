@@ -67,18 +67,18 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
   };
 
   return (
-    <div className="w-[70%] font-poppins mx-auto min-h-[77vh] flex flex-col justify-end">
+    <div className="w-[95%] lg:w-[70%] font-poppins mx-auto min-h-[77vh] flex flex-col justify-end">
       <div className="join-shadow font-poppins p-6">
         {/* heading  */}
         <div className="">
-          <h2 className="text-2xl font-medium mx-auto mb-4 text-center w-[70%]">
+          <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%]">
             Fill up the Form to get your details to us fo further Process
           </h2>
-          <div className="liner w-[70%] h-[2px] bg-black mx-auto"></div>
+          <div className="liner lg:w-[70%] h-[2px] bg-black mx-auto"></div>
         </div>
 
         {/* options  */}
-        <div className="videos mt-8 mx-16 flex justify-center gap-x-8">
+        <div className="videos mt-8 lg:mx-16 flex justify-center gap-x-8">
           <div className="w-[90%] flex flex-col justify-center">
             <form action="#" method="post" onSubmit={handleSubmit} ref={form}>
               <h2 className="mb-2 font-semibold text-xl">1. Contact Details</h2>
@@ -195,7 +195,10 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <h3 className="text-lg font-semibold">
                 What&apos;s Your Business Goal?
               </h3>
-              <label htmlFor="goal" className="flex gap-x-6">
+              <label
+                htmlFor="goal"
+                className="flex flex-col lg:flex-row gap-x-6"
+              >
                 <div className="flex items-center gap-x-2">
                   <input type="radio" name="goal" id="goal" value={'leads'} />
                   <span>Leads</span>
@@ -280,9 +283,9 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
                     type="radio"
                     name="serveOutside"
                     id="serveOutside"
-                    value={'yes'}
+                    value={'no'}
                   />
-                  <span>Yes</span>
+                  <span>No</span>
                 </div>
               </label>
               <input
@@ -330,9 +333,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
                 placeholder="Mail Password (Only fill if you want to register on Google)"
                 className="border-b px-3 py-2 w-full my-2"
               />
-              <h2 className="mb-2 mt-8 font-semibold text-xl">
-                4. Upload Items
-              </h2>
+
               <button
                 className="text-xl bg-themeBlue text-white px-3 py-2 flex items-center justify-center mt-5 mr-auto gap-x-2"
                 type="submit"
@@ -345,7 +346,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
       </div>
 
       {/* action buttons  */}
-      <div className="bg-themeBlue flex justify-between text-white py-3 px-16">
+      <div className="bg-themeBlue flex justify-between text-white py-3 px-5 lg:px-16">
         <div className="flex items-center">
           <button
             className="text-xl flex items-center justify-center ml-auto gap-x-2"

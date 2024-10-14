@@ -43,19 +43,19 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
   };
 
   return (
-    <div className="w-[70%] font-poppins mx-auto min-h-[77vh] flex flex-col justify-end">
+    <div className="w-[95%] lg:w-[70%] font-poppins mx-auto min-h-[77vh] flex flex-col justify-end">
       <div className="join-shadow font-poppins p-6">
         {/* heading  */}
         <div className="">
-          <h2 className="text-2xl font-medium mx-auto mb-4 text-center w-[70%]">
+          <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%]">
             Add more features to your package for better results!
           </h2>
-          <div className="liner w-[70%] h-[2px] bg-black mx-auto"></div>
+          <div className="liner lg:w-[70%] h-[2px] bg-black mx-auto"></div>
         </div>
 
         {/* options  */}
-        <div className="videos mt-8 mx-16 flex justify-center gap-x-8">
-          <div className="w-[20%] border min-h-[47vh] flex flex-col justify-between">
+        <div className="videos mt-8 lg:mx-16 flex flex-col gap-y-6 lg:flex-row justify-center gap-x-8">
+          <div className="lg:w-[20%] border lg:min-h-[47vh] flex flex-col justify-between">
             <label className="flex flex-col justify-start">
               <input
                 type="checkbox"
@@ -86,7 +86,7 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
             </label>
           </div>
 
-          <div className="w-[20%] border min-h-[47vh] flex flex-col justify-between">
+          <div className="lg:w-[20%] border lg:min-h-[47vh] flex flex-col justify-between">
             <label className="flex flex-col justify-start">
               <input
                 type="checkbox"
@@ -117,7 +117,7 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
             </label>
           </div>
 
-          <div className="w-[20%] border min-h-[47vh] flex flex-col justify-between">
+          <div className="lg:w-[20%] border lg:min-h-[47vh] flex flex-col justify-between">
             <label>
               <input
                 type="checkbox"
@@ -158,7 +158,7 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
             </label>
           </div>
 
-          <div className="w-[20%] border min-h-[47vh] flex flex-col justify-between">
+          <div className="lg:w-[20%] border lg:min-h-[47vh] flex flex-col justify-between">
             <label>
               <input
                 type="checkbox"
@@ -200,7 +200,7 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
       </div>
 
       {/* action buttons  */}
-      <div className="bg-themeBlue flex justify-between text-white py-3 px-16">
+      <div className="bg-themeBlue flex justify-between text-white py-3 px-5 lg:px-16">
         <div className="flex items-center">
           <button
             className="text-xl flex items-center justify-center ml-auto gap-x-2"

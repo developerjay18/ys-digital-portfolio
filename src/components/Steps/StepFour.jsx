@@ -13,19 +13,19 @@ const StepFour = ({ nextStep, prevStep, setSelection }) => {
   };
 
   return (
-    <div className="w-[70%] font-poppins mx-auto min-h-[77vh] flex flex-col justify-end">
+    <div className="w-[95%] lg:w-[70%] font-poppins mx-auto min-h-[77vh] flex flex-col justify-end">
       <div className="join-shadow font-poppins p-6">
         {/* heading  */}
         <div className="">
-          <h2 className="text-2xl font-medium mx-auto mb-4 text-center w-[70%]">
+          <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%]">
             Describe your business in 4-5 words
           </h2>
-          <div className="liner w-[70%] h-[2px] bg-black mx-auto"></div>
+          <div className="liner lg:w-[70%] h-[2px] bg-black mx-auto"></div>
         </div>
 
         {/* options  */}
-        <div className="videos mt-8 mx-16 flex justify-center gap-x-8">
-          <div className="min-h-[47vh] w-[80%] flex flex-col justify-center gap-y-8">
+        <div className="videos mt-8 lg:mx-16 flex justify-center gap-x-8">
+          <div className="lg:min-h-[47vh] lg:w-[80%] flex flex-col justify-center gap-y-8">
             <img
               src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1728796899/vxqhldbpzlav6irvmvut.png"
               alt="image"
@@ -51,7 +51,7 @@ const StepFour = ({ nextStep, prevStep, setSelection }) => {
       </div>
 
       {/* action buttons  */}
-      <div className="bg-themeBlue flex justify-between text-white py-3 px-16">
+      <div className="bg-themeBlue flex justify-between text-white py-3 px-5 lg:px-16">
         <div className="flex items-center">
           <button
             className="text-xl flex items-center justify-center ml-auto gap-x-2"
@@ -79,7 +79,7 @@ const StepFour = ({ nextStep, prevStep, setSelection }) => {
           </button>
         </div>
       </div>
-      <div className="bg-black text-white py-3 px-16">
+      <div className="bg-black text-white py-3 px-5 lg:px-16">
         <div className="text-2xl font-semibold text-center">4 / 9</div>
       </div>
     </div>
