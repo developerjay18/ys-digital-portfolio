@@ -79,6 +79,9 @@ const StepFour = ({ nextStep, prevStep, setSelection }) => {
           </button>
         </div>
       </div>
+      <div className="bg-black text-white py-3 px-16">
+        <div className="text-2xl font-semibold text-center">4 / 9</div>
+      </div>
     </div>
   );
 };

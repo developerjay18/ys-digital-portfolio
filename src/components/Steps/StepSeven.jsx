@@ -228,6 +228,9 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
           </button>
         </div>
       </div>
+      <div className="bg-black text-white py-3 px-16 mb-2">
+        <div className="text-2xl font-semibold text-center">7 / 9</div>
+      </div>
     </div>
   );
 };

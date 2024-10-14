@@ -123,14 +123,16 @@ const OnboardingForm = () => {
   return (
     <div>
       <header className="font-poppins">
-        <div className="black-line text-center bg-black max-h-[8vh] overflow-hidden text-white px-16 py-3 text-2xl font-bold">
+        <div className="black-line flex justify-center items-center text-center bg-black max-h-[6vh] overflow-hidden text-white px-16 py-3 text-xl font-bold">
           <h1>Grow Your Business Online With Us : Yash Sharma Digital</h1>
         </div>
-        <div className="black-line text-center max-h-[8vh] overflow-hidden bg-themeBlue text-white px-16 py-3 text-2xl font-bold italic">
+        <div className="black-line flex justify-center items-center text-center max-h-[6vh] overflow-hidden bg-themeBlue text-white px-16 py-3 text-xl font-bold italic">
           <h1>Get More Customers, Inquiries, Leads, Visitors & Revenue!</h1>
         </div>
       </header>
-      <div className="min-h-[84vh] pt-4">{steps[currentStep]}</div>
+      <div className="min-h-[84vh] pt-4">
+      {steps[currentStep]}
+      </div>
     </div>
   );
 };

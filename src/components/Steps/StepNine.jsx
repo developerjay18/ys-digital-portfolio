@@ -361,6 +361,9 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
         </div>
         <div className="flex items-center"></div>
       </div>
+      <div className="bg-black text-white py-3 px-16 mb-2">
+        <div className="text-2xl font-semibold text-center">9 / 9</div>
+      </div>
     </div>
   );
 };

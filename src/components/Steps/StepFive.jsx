@@ -65,6 +65,9 @@ const StepFive = ({ nextStep, prevStep }) => {
           </button>
         </div>
       </div>
+      <div className="bg-black text-white py-3 px-16">
+        <div className="text-2xl font-semibold text-center">5 / 9</div>
+      </div>
     </div>
   );
 };
