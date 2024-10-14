@@ -1,14 +1,69 @@
+import axios from 'axios';
 import React, { useRef } from 'react';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 const StepNine = ({ nextStep, prevStep, setSelection }) => {
   const form = useRef();
   const navigate = useNavigate();
+  const state = useSelector((state) => state.join);
+  const scriptUrl =
+    'https://script.google.com/macros/s/AKfycbwPO0AQ3kaqYUZDPJvC4Gk-H9QyCjv-77d6Spa2_ELwvNZEUyTyLxWdMgWnr7v8mMwC/exec';
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(form.current.name.value);
-    // navigate('/join/thankyou'); // make this live after completion of all process
+
+    const formData = new FormData();
+
+    formData.append('RunAdsBefore', state.runAdsBefore);
+    formData.append('Type', state.businessType);
+    formData.append('Description', state.businessDescription);
+    formData.append('WantGMB', state.selectedOptions.googleMyBusiness);
+    formData.append('WantSMM', state.selectedOptions.socialMediaMarketing);
+    formData.append('WantExtraLeads', state.selectedOptions.leads);
+    formData.append('ExtraLeadsCounts', state.selectedOptions.leadsCount);
+    formData.append('WantExtraViews', state.selectedOptions.views);
+    formData.append('ExtraViewsCounts', state.selectedOptions.viewsCount);
+    formData.append('OwnerName', form.current.name.value);
+    formData.append('Gender', form.current.gender.value);
+    formData.append('Birthdate', form.current.birthdate.value);
+    formData.append('Name', form.current.businessName.value);
+    formData.append('Email', form.current.eemail.value);
+    formData.append('ContactNumber', form.current.contact.value);
+    formData.append('ContactNumber2', form.current.contactTwo.value);
+    formData.append('Whatsapp', form.current.whatsappNumber.value);
+    formData.append('LongAddress', form.current.longAddress.value);
+    formData.append('ShortAddress', form.current.shortAddress.value);
+    formData.append('BusinessHours', form.current.businessHours.value);
+    formData.append('Tagline', form.current.tagline.value);
+    formData.append('Website', form.current.website.value);
+    formData.append('Goal', form.current.goal.value);
+    formData.append('Products', form.current.product.value);
+    formData.append('Customers', form.current.customer.value);
+    formData.append('Language', form.current.language.value);
+    formData.append('Uniqueness', form.current.uniqueness.value);
+    formData.append('Competitior', form.current.competitor.value);
+    formData.append('ServeOutside', form.current.serveOutside.value);
+    formData.append('Highlights', form.current.highlights.value);
+    formData.append('FbNumber', form.current.fbNumber.value);
+    formData.append('FbPasswords', form.current.fbPassword.value);
+    formData.append('InstaNumber', form.current.instaNumber.value);
+    formData.append('InstaPasswords', form.current.instaPassword.value);
+    formData.append('MailPassword', form.current.mailPassword.value);
+    formData.append('Photo', 'NAN');
+    formData.append('Logo', 'NAN');
+    formData.append('Lightbill', 'NAN');
+
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: formData,
+    })
+      .then((res) => {
+        console.log('SUCCESSFULLY SUBMITTED', res);
+      })
+      .catch((err) => console.log(err));
+
+    navigate('/join/thankyou'); // make this live after completion of all process
   };
 
   return (
@@ -34,13 +89,28 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
                 placeholder="Name"
                 className="border-b px-3 py-2 w-full my-2"
               />
-              <input
-                type="text"
-                name="gender"
-                id="gender"
-                placeholder="Gender"
-                className="border-b px-3 py-2 w-full my-2"
-              />
+              <h3 className="text-lg font-semibold mt-2">Gender</h3>
+              <label htmlFor="gender" className="flex gap-x-6">
+                <div className="flex items-center gap-x-2">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="gender"
+                    value={'male'}
+                  />
+                  <span>Male</span>
+                </div>
+
+                <div className="flex items-center gap-x-2">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="gender"
+                    value={'female'}
+                  />
+                  <span>Female</span>
+                </div>
+              </label>
               <input
                 type="text"
                 name="birthdate"
@@ -50,79 +120,72 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               />
               <input
                 type="text"
-                name="business name"
-                id="business name"
+                name="businessName"
+                id="businessName"
                 placeholder="Business Full Name"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business mail"
-                id="business mail"
+                name="eemail"
+                id="eemail"
                 placeholder="Business Mail"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business contact"
-                id="business contact"
+                name="contact"
+                id="contact"
                 placeholder="Business Contact Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business contact two"
-                id="business contact two"
+                name="contactTwo"
+                id="contactTwo"
                 placeholder="Business Contact Number 2"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="active whatsapp number"
-                id="active whatsapp number"
+                name="whatsappNumber"
+                id="whatsappNumber"
                 placeholder="Active Whatsapp Number"
-                className="border-b px-3 py-2 w-full my-2"
-              />
-              <input
-                type="text"
-                name="whatsapp business number"
-                id="whatsapp business number"
-                placeholder="Whatsapp Business Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <p>Note: This Number not should be your main Number.</p>
               <input
                 type="text"
-                name="business address with pincode"
-                id="business address with pincode"
+                name="longAddress"
+                id="longAddress"
                 placeholder="Business Full Address With Pincode"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business short address"
-                id="business short address"
+                name="shortAddress"
+                id="shortAddress"
                 placeholder="Business Short Address"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business hours"
-                id="business hours"
+                name="businessHours"
+                id="businessHours"
                 placeholder="Business Hours"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business tagline"
-                id="business tagline"
+                name="tagline"
+                id="tagline"
                 placeholder="Business Tagline"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business website"
-                id="business website"
+                name="website"
+                id="website"
                 placeholder="Business Website"
                 className="border-b px-3 py-2 w-full my-2"
               />
@@ -166,48 +229,48 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </label>
               <input
                 type="text"
-                name="business product"
-                id="business product"
+                name="product"
+                id="product"
                 placeholder="What products or services does your business offer?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business customer type"
-                id="business customer type"
+                name="customer"
+                id="customer"
                 placeholder="Who are your customers?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business language"
-                id="business language"
+                name="language"
+                id="language"
                 placeholder="What languages do your customers prefer?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business uniqueness"
-                id="business uniqueness"
+                name="uniqueness"
+                id="uniqueness"
                 placeholder="What makes your business unique compared to competitors?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="business competitor"
-                id="business competitor"
+                name="competitor"
+                id="competitor"
                 placeholder="Who is your biggest competitor?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <h3 className="text-lg font-semibold mt-2">
                 Do you serve areas outside your location?
               </h3>
-              <label htmlFor="serving location" className="flex gap-x-6">
+              <label htmlFor="serveOutside" className="flex gap-x-6">
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="serving location"
-                    id="serving location"
+                    name="serveOutside"
+                    id="serveOutside"
                     value={'yes'}
                   />
                   <span>Yes</span>
@@ -215,8 +278,8 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
-                    name="serving location"
-                    id="serving location"
+                    name="serveOutside"
+                    id="serveOutside"
                     value={'yes'}
                   />
                   <span>Yes</span>
@@ -224,8 +287,8 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </label>
               <input
                 type="text"
-                name="business highlight"
-                id="business highlight"
+                name="highlights"
+                id="highlights"
                 placeholder="Is there anything specific you want to highlight about your business?"
                 className="border-b px-3 py-2 w-full my-2"
               />
@@ -234,36 +297,36 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </h2>
               <input
                 type="text"
-                name="fb id-number"
-                id="fb id-number"
+                name="fbNumber"
+                id="fbNumber"
                 placeholder="Personal Facebook ID/ Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="fb password"
-                id="fb password"
+                name="fbPassword"
+                id="fbPassword"
                 placeholder="Personal Facebook Password"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="insta id-number"
-                id="insta id-number"
+                name="instaNumber"
+                id="instaNumber"
                 placeholder="Instagram ID/ Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="insta password"
-                id="insta password"
+                name="instaPassword"
+                id="instaPassword"
                 placeholder="Instagram Password"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
-                name="mail password"
-                id="mail password"
+                name="mailPassword"
+                id="mailPassword"
                 placeholder="Mail Password (Only fill if you want to register on Google)"
                 className="border-b px-3 py-2 w-full my-2"
               />

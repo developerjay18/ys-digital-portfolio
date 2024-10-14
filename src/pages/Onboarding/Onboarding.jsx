@@ -8,17 +8,50 @@ import StepSix from '../../components/Steps/StepSix';
 import StepSeven from '../../components/Steps/StepSeven';
 import StepEight from '../../components/Steps/StepEight';
 import StepNine from '../../components/Steps/StepNine';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  enterrunAdsBefore,
+  enterBusinessType,
+  enterBusinessDescription,
+  enterSelectedOptions,
+} from '../../store/joinSlice';
 
 const OnboardingForm = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [formData, setFormData] = useState({}); // To store all user selections
+
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state.join);
 
   // Store the data from each step
   const setSelection = (step, selection) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      [step]: selection,
-    }));
+    console.log(selection);
+    if (step === 2) {
+      dispatch(enterrunAdsBefore(selection));
+    } else if (step === 3) {
+      dispatch(enterBusinessType(selection));
+    } else if (step === 4) {
+      dispatch(enterBusinessDescription(selection));
+    } else if (step === 7) {
+      console.log(selection);
+      dispatch(
+        enterSelectedOptions({
+          googleMyBusiness: selection.selectedCheckboxes.includes(
+            'googleMyBusiness'
+          )
+            ? true
+            : false,
+          socialMediaMarketing: selection.selectedCheckboxes.includes(
+            'socialMediaMarketing'
+          )
+            ? true
+            : false,
+          leads: selection.selectedCheckboxes.includes('leads') ? true : false,
+          views: selection.selectedCheckboxes.includes('views') ? true : false,
+          leadsCount: selection.counterValues.counter1,
+          viewsCount: selection.counterValues.counter2,
+        })
+      );
+    }
   };
 
   const nextStep = () => {

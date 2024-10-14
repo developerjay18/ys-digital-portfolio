@@ -38,6 +38,7 @@ const StepFour = ({ nextStep, prevStep, setSelection }) => {
               required
               onChange={(e) => {
                 setSelectedOption(e.target.value);
+                setSelection(e.target.value);
               }}
               className="border border-black py-2 px-4"
             />

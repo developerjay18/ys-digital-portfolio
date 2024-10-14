@@ -33,6 +33,7 @@ const StepThree = ({ nextStep, prevStep, setSelection }) => {
                 checked={selectedOption === 'completely offline'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
+                  setSelection('completely offline');
                   nextStep();
                 }}
               />
@@ -55,6 +56,7 @@ const StepThree = ({ nextStep, prevStep, setSelection }) => {
                 checked={selectedOption === 'completely online'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
+                  setSelection('completely online');
                   nextStep();
                 }}
               />
@@ -77,6 +79,7 @@ const StepThree = ({ nextStep, prevStep, setSelection }) => {
                 checked={selectedOption === 'offline + online'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
+                  setSelection('offline + online');
                   nextStep();
                 }}
               />

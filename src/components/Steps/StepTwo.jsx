@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const StepTwo = ({ nextStep, prevStep, setSelection }) => {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState(false);
 
   const handleNext = () => {
     if (selectedOption) {
       setSelection(selectedOption); // Store selection in main state
-      nextStep(); // Proceed to next step
+      nextStep();
     } else {
       alert('Please select an option.');
     }
@@ -29,10 +29,11 @@ const StepTwo = ({ nextStep, prevStep, setSelection }) => {
             <label className="border-black p-4 border">
               <input
                 type="radio"
-                value="yes"
-                checked={selectedOption === 'yes'}
-                onChange={(e) => {
-                  setSelectedOption(e.target.value);
+                value="true"
+                checked={selectedOption === 'true'}
+                onChange={() => {
+                  setSelectedOption(true);
+                  setSelection(true);
                   nextStep();
                 }}
               />
@@ -51,10 +52,11 @@ const StepTwo = ({ nextStep, prevStep, setSelection }) => {
             <label className="border-black p-4 border">
               <input
                 type="radio"
-                value="no"
-                checked={selectedOption === 'no'}
-                onChange={(e) => {
-                  setSelectedOption(e.target.value);
+                value="false"
+                checked={selectedOption === 'false'}
+                onChange={() => {
+                  setSelectedOption(false);
+                  setSelection(false);
                   nextStep();
                 }}
               />
