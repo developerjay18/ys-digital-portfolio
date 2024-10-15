@@ -26,7 +26,7 @@ const StepSix = ({ nextStep, prevStep, setSelection }) => {
         {/* options  */}
         <div className="videos mt-8 lg:mx-16 flex flex-col lg:flex-row justify-center gap-x-8">
           <div className="lg:w-[70%] min-h-[47vh] flex flex-col justify-center">
-            <label className="border-black p-4 border flex flex-col lg:flex-row">
+            <label className="border-black p-4 border flex justify-start items-start flex-col lg:flex-row">
               <input
                 type="radio"
                 value="excited to join"
@@ -41,7 +41,7 @@ const StepSix = ({ nextStep, prevStep, setSelection }) => {
                 alt="icon"
                 className="w-[250px] mx-auto"
               />
-              <div className="text-center flex justify-center items-center mt-4 font-semibold text-3xl">
+              <div className="text-center flex justify-center items-center lg:mt-16 font-semibold text-3xl">
                 Excited to join <br /> this package for just ₹15,000!
               </div>
             </label>

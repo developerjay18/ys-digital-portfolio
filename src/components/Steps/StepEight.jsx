@@ -26,7 +26,7 @@ const StepEight = ({ nextStep, prevStep, setSelection }) => {
         {/* options  */}
         <div className="videos mt-8 lg:mx-16 flex justify-center gap-x-8">
           <div className="lg:w-[70%] min-h-[47vh] flex flex-col justify-center">
-            <label className="border-black p-4 border flex">
+            <label className="border-black p-4 border flex flex-col justify-start items-start">
               <input
                 type="radio"
                 value="thanks done"
@@ -35,6 +35,7 @@ const StepEight = ({ nextStep, prevStep, setSelection }) => {
                   setSelectedOption(e.target.value);
                   nextStep();
                 }}
+                className='border-[10px] border-black'
               />
               <img
                 src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1728796900/dbgou9sl1lj9tdhx2xz5.png"
