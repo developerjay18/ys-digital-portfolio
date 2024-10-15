@@ -106,12 +106,12 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
               <div className="liner px-4 h-[2px] w-[85%] mx-auto bg-black mt-1 mb-2"></div>
 
               <p className="text-sm pl-4">
-                Attract more business when people search for your service on
-                Google!
+                Stay active on social media with interesting posts on Facebook
+                and Instagram!
               </p>
               <div className="flex justify-end">
                 <div className="price-tag px-2 py-1 mt-2 text-normal font-semibold bg-black text-white">
-                  Only &#8377; 2500
+                  Only &#8377; 8500
                 </div>
               </div>
             </label>
@@ -200,6 +200,27 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
       </div>
 
       {/* action buttons  */}
+      <div className=" flex flex-col lg:flex-row gap-y-4 justify-between text-black py-3 px-5 lg:px-16 bg-white">
+        <div className="flex items-center">
+          <button
+            className="text-md flex items-center justify-center mx-auto lg:ml-auto gap-x-2 bg-themeBlue px-4 py-1 rounded-full text-white"
+            onClick={prevStep}
+          >
+            Total <span> &#8377; 6000</span>
+          </button>
+        </div>
+
+        <div className="flex items-center">
+          <button
+            className="text-sm flex items-center justify-center mx-auto lg:ml-auto py-1 gap-x-2 border rounded-full px-3"
+            onClick={handleNext}
+          >
+            <span className="text-xl">&#9675;</span> Skip, I just want to go
+            with basic package!{' '}
+          </button>
+        </div>
+      </div>
+
       <div className="bg-themeBlue flex flex-col lg:flex-row gap-y-4 justify-between text-white py-3 px-5 lg:px-16">
         <div className="flex items-center">
           <button
@@ -214,14 +235,7 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
             />
           </button>
         </div>
-        <div className="flex items-center">
-          <button
-            className="lg:text-lg border lg:px-3 rounded-full flex items-center justify-center ml-auto gap-x-2"
-            onClick={handleNext}
-          >
-            Skip, I just want to go with basic package!
-          </button>
-        </div>
+
         <div className="flex items-center">
           <button
             className="text-xl flex items-center justify-center mx-auto lg:ml-auto gap-x-2"

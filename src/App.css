@@ -102,16 +102,14 @@
 
 /* Add this CSS in your global CSS file or the component's CSS file */
 .slide-in-left {
-  animation: slideInLeft 0.5s forwards;
+  animation: slideRightToLeft 0.5s ease-out forwards;
 }
 
-@keyframes slideInLeft {
+@keyframes slideRightToLeft {
   0% {
-    transform: translateX(-100%);
-    opacity: 0;
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
   }
 }
