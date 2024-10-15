@@ -13,7 +13,7 @@ const StepTwo = ({ nextStep, prevStep, setSelection }) => {
   };
 
   return (
-    <div className="lg:w-[70%] w-[95%] mx-auto min-h-[77vh] flex flex-col justify-center">
+    <div className="lg:w-[70%] w-[95%] mx-auto lg:min-h-[77vh] flex flex-col justify-center">
       <div className="join-shadow font-poppins p-6">
         {/* heading  */}
         <div className="">

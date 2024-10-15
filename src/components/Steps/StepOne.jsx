@@ -2,7 +2,7 @@ import React from 'react';
 
 const StepOne = ({ nextStep }) => {
   return (
-    <div className="lg:w-[70%] w-[95%] mx-auto min-h-[80vh] flex flex-col justify-center">
+    <div className="lg:w-[70%] w-[95%] mx-auto lg:min-h-[80vh] flex flex-col justify-center">
       <div className="join-shadow font-poppins p-6">
         <div className="">
           <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%] hidden lg:block">
