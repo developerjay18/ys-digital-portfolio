@@ -25,6 +25,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
           ExtraLeadsCounts: state.selectedOptions.leadsCount,
           WantExtraViews: state.selectedOptions.views,
           ExtraViewsCounts: state.selectedOptions.viewsCount,
+          Total: state.selectedOptions.total,
           OwnerName: form.current.OwnerName.value,
           Gender: form.current.Gender.value,
           Birthdate: form.current.Birthdate.value,

@@ -50,6 +50,7 @@ const OnboardingForm = () => {
           views: selection.selectedCheckboxes.includes('views') ? true : false,
           leadsCount: selection.counterValues.counter1,
           viewsCount: selection.counterValues.counter2,
+          total: selection.totalPrice,
         })
       );
     }

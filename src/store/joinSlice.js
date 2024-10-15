@@ -11,6 +11,7 @@ const initialState = {
     socialMediaMarketing: false,
     leadsCount: 0,
     viewsCount: 0,
+    total: 0,
   },
 };
 
@@ -35,6 +36,7 @@ const joinSlice = createSlice({
       state.selectedOptions.viewsCount = action.payload.viewsCount;
       state.selectedOptions.socialMediaMarketing =
         action.payload.socialMediaMarketing;
+      state.selectedOptions.total = action.payload.total;
     },
   },
 });

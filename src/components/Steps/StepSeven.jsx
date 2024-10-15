@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const StepSeven = ({ nextStep, prevStep, setSelection }) => {
   // State to manage checkboxes
@@ -13,6 +13,17 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
   const [counter1, setCounter1] = useState(0);
   const [counter2, setCounter2] = useState(0);
 
+  // State to manage total price
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  // Base prices for each item
+  const prices = {
+    googleMyBusiness: 2500,
+    socialMediaMarketing: 8500,
+    leads: 3500, // per lead counter
+    views: 1000, // per view counter
+  };
+
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
     setSelectedCheckboxes((prev) => ({
@@ -25,6 +36,25 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
     if (name === 'views' && !checked) setCounter2(0);
   };
 
+  useEffect(() => {
+    let newTotal = 0;
+
+    // Add price for selected checkboxes
+    Object.keys(selectedCheckboxes).forEach((key) => {
+      if (selectedCheckboxes[key]) {
+        if (key === 'leads') {
+          newTotal += prices[key] * counter1;
+        } else if (key === 'views') {
+          newTotal += prices[key] * counter2;
+        } else {
+          newTotal += prices[key];
+        }
+      }
+    });
+
+    setTotalPrice(newTotal);
+  }, [selectedCheckboxes, counter1, counter2]);
+
   const handleNext = () => {
     // Collect selected checkboxes and counter values
     const selected = {
@@ -35,13 +65,13 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
         counter1: selectedCheckboxes.leads ? counter1 : 0,
         counter2: selectedCheckboxes.views ? counter2 : 0,
       },
+      totalPrice: totalPrice + 15000,
     };
 
     console.log(selected);
     setSelection(selected); // Store selection in parent state
     nextStep(); // Proceed to next step
   };
-
   return (
     <div className="w-[95%] lg:w-[70%] font-poppins mx-auto min-h-[77vh] flex flex-col justify-end">
       <div className="join-shadow font-poppins p-6">
@@ -206,7 +236,7 @@ const StepSeven = ({ nextStep, prevStep, setSelection }) => {
             className="text-md flex items-center justify-center mx-auto lg:ml-auto gap-x-2 bg-themeBlue px-4 py-1 rounded-full text-white"
             onClick={prevStep}
           >
-            Total <span> &#8377; 6000</span>
+            Total <span> &#8377; {totalPrice + 15000}</span>
           </button>
         </div>
 
