@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const StepFive = ({ nextStep, prevStep }) => {
   return (
@@ -24,12 +25,16 @@ const StepFive = ({ nextStep, prevStep }) => {
             </p>
             <div className="buttons mt-4 flex flex-col lg:flex-row gap-y-4 justify-center gap-x-8">
               <button className="bg-black rounded-full px-4 lg:px-6 py-2 lg:py-3 text-white text-lg">
-                <span></span>
-                <span>Watch Service Explanaion Video</span>
+                <Link to={'https://bit.ly/yash-portfolio-eng'}>
+                  <span></span>
+                  <span>Service Explanation PDF</span>
+                </Link>
               </button>
-              <button className="bg-black rounded-full px-4 lg:px-6 py-2 lg:py-3 text-white text-lg">
-                <span></span>
-                <span>Watch Client Testimonial Video</span>
+              <button className="bg-black rounded-full px-4 lg:px-6 py-2 lg:py-3 text-white text-lg w-[250px]">
+                <Link to={'https://maps.app.goo.gl/uxjxNktAQbPvkSK66'}>
+                  <span></span>
+                  <span>Read Our Reviews</span>
+                </Link>
               </button>
             </div>
           </div>

@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const StepOne = ({ nextStep }) => {
   return (
-    <div className="lg:w-[70%] w-[95%] mx-auto lg:min-h-[80vh] flex flex-col justify-center">
+    <div className="lg:w-[70%] w-[95%] mx-auto lg:mt-2 lg:min-h-[80vh] flex flex-col justify-center">
       <div className="join-shadow font-poppins p-6">
         <div className="">
           <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%] hidden lg:block">
-            You know our services and results. <br /> If not, watch these videos
-            or check the testimonials!
+            You know about our services and results. <br /> If not, read this
+            PDF or check the testimonials!
           </h2>
           <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%] block lg:hidden">
             You know our services and results. If not, watch these videos or
@@ -18,16 +19,30 @@ const StepOne = ({ nextStep }) => {
 
         <div className="videos mt-8 gap-y-8 lg:mx-16 flex flex-col lg:flex-row justify-around">
           <div className="lg:w-[45%] flex flex-col justify-center">
-            <div className="video bg-themeBlue h-[35vh]"></div>
-            <button className="bg-black text-white w-[50%] mx-auto mt-4 px-4 py-2">
-              Watch Now
-            </button>
+            <div className="video bg-themeBlue h-[32vh]">
+              <Link to={'https://bit.ly/yash-portfolio-eng'}>
+                <img src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1729225517/y68stv0ukqpq2vsckhef.png" />
+              </Link>
+            </div>
+            <Link
+              to={'https://bit.ly/yash-portfolio-eng'}
+              className="mx-auto bg-black text-white mt-4 px-4 py-2 w-[50%]"
+            >
+              <button className="w-full text-cenetr">Watch Now</button>
+            </Link>
           </div>
           <div className="lg:w-[45%] flex flex-col justify-center">
-            <div className="video bg-themeBlue h-[35vh]"></div>
-            <button className="bg-black text-white w-[50%] mx-auto mt-4 px-4 py-2">
-              Watch Now
-            </button>
+            <div className="video bg-themeBlue h-[32vh]">
+              <Link to={'https://maps.app.goo.gl/uxjxNktAQbPvkSK66'}>
+                <img src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1729225516/d6ticu8urv27agohikye.png" />
+              </Link>
+            </div>
+            <Link
+              to={'https://maps.app.goo.gl/uxjxNktAQbPvkSK66'}
+              className="mx-auto bg-black text-white mt-4 px-4 py-2 w-[50%]"
+            >
+              <button className="w-full text-cenetr">Watch Now</button>
+            </Link>
           </div>
         </div>
       </div>
