@@ -150,7 +150,7 @@ const OnboardingForm = () => {
           <h1>Get More Customers, Inquiries, Leads, Visitors & Revenue!</h1>
         </div>
       </header>
-      <div className="lg:min-h-[84vh] pt-4">{steps[currentStep]}</div>
+      <div className="lg:min-h-[84vh] pt-4 max-w-screen overflow-hidden">{steps[currentStep]}</div>
     </div>
   );
 };
