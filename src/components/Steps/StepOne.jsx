@@ -19,20 +19,20 @@ const StepOne = ({ nextStep }) => {
 
         <div className="videos mt-8 gap-y-8 lg:mx-16 flex flex-col lg:flex-row justify-around">
           <div className="lg:w-[45%] flex flex-col justify-center">
-            <div className="video bg-themeBlue h-[32vh]">
+            <div className="video bg-themeBlue lg:h-[32vh]">
               <Link to={'https://bit.ly/yash-portfolio-eng'}>
                 <img src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1729225517/y68stv0ukqpq2vsckhef.png" />
               </Link>
             </div>
             <Link
               to={'https://bit.ly/yash-portfolio-eng'}
-              className="mx-auto bg-black text-white mt-4 px-4 py-2 w-[50%]"
+              className="mx-auto bg-black text-white mt-4 px-4 py-2 w-[55%]"
             >
-              <button className="w-full text-cenetr">Watch Now</button>
+              <button className="w-full text-cenetr">Learn More (PDF)</button>
             </Link>
           </div>
           <div className="lg:w-[45%] flex flex-col justify-center">
-            <div className="video bg-themeBlue h-[32vh]">
+            <div className="video bg-themeBlue lg:h-[32vh]">
               <Link to={'https://maps.app.goo.gl/uxjxNktAQbPvkSK66'}>
                 <img src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1729225516/d6ticu8urv27agohikye.png" />
               </Link>
@@ -41,7 +41,7 @@ const StepOne = ({ nextStep }) => {
               to={'https://maps.app.goo.gl/uxjxNktAQbPvkSK66'}
               className="mx-auto bg-black text-white mt-4 px-4 py-2 w-[50%]"
             >
-              <button className="w-full text-cenetr">Watch Now</button>
+              <button className="w-full text-cenetr">Read Reviews</button>
             </Link>
           </div>
         </div>
