@@ -11,7 +11,7 @@ const StepOne = ({ nextStep }) => {
             PDF or check the testimonials!
           </h2>
           <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%] block lg:hidden">
-            You know our services and results. If not, watch these videos or
+            You know about our services and results. If not, read this PDF or
             check the testimonials!
           </h2>
           <div className="liner lg:w-[70%] h-[2px] bg-black mx-auto"></div>
