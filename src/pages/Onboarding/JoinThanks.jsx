@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const JoinThanks = () => {
   return (
@@ -33,6 +34,7 @@ const JoinThanks = () => {
             </p>
           </div>
           <div className="bg-themeBlue text-white py-3 px-5 lg:px-16">
+          <Link to={"/join"}>
             <button className="text-xl flex items-center justify-center mr-auto gap-x-2">
               Previous{' '}
               <img
@@ -41,6 +43,7 @@ const JoinThanks = () => {
                 className="w-14"
               />
             </button>
+          </Link>
           </div>
         </div>
       </div>
