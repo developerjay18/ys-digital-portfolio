@@ -65,7 +65,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
         {/* heading  */}
         <div className="">
           <h2 className="text-2xl font-medium mx-auto mb-4 text-center lg:w-[70%]">
-            Fill up the Form to get your details to us fo further Process
+            Fill up the Form to get your details to us for further Process
           </h2>
           <div className="liner lg:w-[70%] h-[2px] bg-black mx-auto"></div>
         </div>
