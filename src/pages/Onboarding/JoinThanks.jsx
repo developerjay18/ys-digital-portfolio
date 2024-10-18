@@ -25,25 +25,26 @@ const JoinThanks = () => {
 
             <div className="videos mt-8 lg:mx-16 flex justify-around">
               <div className="w-[100%] lg:w-[45%] flex flex-col justify-center">
-                <div className="video bg-themeBlue h-[35vh]"></div>
+                <div className="video bg-themeBlue lg:h-[32vh]">
+                  <img src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1729262277/yppui5qdacmwb2xvu10j.png" />
+                </div>
               </div>
             </div>
             <p className="text-xl mt-5 font-medium mx-auto text-center lg:w-[70%]">
-              Now relax, your work is done! Watch this quick 2-minute video for
-              more details.
+              Now relax, your work is done!
             </p>
           </div>
           <div className="bg-themeBlue text-white py-3 px-5 lg:px-16">
-          <Link to={"/join"}>
-            <button className="text-xl flex items-center justify-center mr-auto gap-x-2">
-              Previous{' '}
-              <img
-                src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1728796899/aoppaxxhon3p2wk4pqm9.png"
-                alt="icon"
-                className="w-14"
-              />
-            </button>
-          </Link>
+            <Link to={'/join'}>
+              <button className="text-xl flex items-center justify-center mr-auto gap-x-2">
+                Previous{' '}
+                <img
+                  src="https://res.cloudinary.com/dqihbbhs3/image/upload/v1728796899/aoppaxxhon3p2wk4pqm9.png"
+                  alt="icon"
+                  className="w-14"
+                />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

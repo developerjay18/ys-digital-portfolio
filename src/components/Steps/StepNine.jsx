@@ -78,12 +78,13 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="OwnerName"
+                required
                 id="OwnerName"
                 placeholder="Name"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <h3 className="text-lg font-semibold mt-2">Gender</h3>
-              <label htmlFor="Gender" className="flex gap-x-6">
+              <label htmlFor="Gender" required className="flex gap-x-6">
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
@@ -106,6 +107,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </label>
               <input
                 type="text"
+                required
                 name="Birthdate"
                 id="Birthdate"
                 placeholder="Birth Date"
@@ -113,6 +115,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               />
               <input
                 type="text"
+                required
                 name="Name"
                 id="Name"
                 placeholder="Business Full Name"
@@ -121,6 +124,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="Email"
+                required
                 id="Email"
                 placeholder="Business Mail"
                 className="border-b px-3 py-2 w-full my-2"
@@ -128,6 +132,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="ContactNumber"
+                required
                 id="ContactNumber"
                 placeholder="Business Contact Number"
                 className="border-b px-3 py-2 w-full my-2"
@@ -135,6 +140,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="ContactNumber2"
+                required
                 id="ContactNumber2"
                 placeholder="Business Contact Number 2"
                 className="border-b px-3 py-2 w-full my-2"
@@ -142,21 +148,24 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="Whatsapp"
+                required
                 id="Whatsapp"
-                placeholder="Active Whatsapp Number"
+                placeholder="Whatsapp Business Number"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <p>Note: This Number not should be your main Number.</p>
               <input
                 type="text"
                 name="LongAddress"
+                required
                 id="LongAddress"
-                placeholder="Business Full Address With Pincode"
+                placeholder="Full Address With Pincode"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
                 name="ShortAddress"
+                required
                 id="ShortAddress"
                 placeholder="Business Short Address"
                 className="border-b px-3 py-2 w-full my-2"
@@ -164,6 +173,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="BusinessHours"
+                required
                 id="BusinessHours"
                 placeholder="Business Hours"
                 className="border-b px-3 py-2 w-full my-2"
@@ -171,6 +181,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="Tagline"
+                required
                 id="Tagline"
                 placeholder="Business Tagline"
                 className="border-b px-3 py-2 w-full my-2"
@@ -178,6 +189,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="Website"
+                required
                 id="Website"
                 placeholder="Business Website"
                 className="border-b px-3 py-2 w-full my-2"
@@ -190,6 +202,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </h3>
               <label
                 htmlFor="Goal"
+                required
                 className="flex flex-col lg:flex-row gap-x-6"
               >
                 <div className="flex items-center gap-x-2">
@@ -226,13 +239,15 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="Products"
+                required
                 id="Products"
-                placeholder="What products or services does your business offer?"
+                placeholder="Your Products & Services?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
                 name="Customers"
+                required
                 id="Customers"
                 placeholder="Who are your customers?"
                 className="border-b px-3 py-2 w-full my-2"
@@ -240,20 +255,23 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="Language"
+                required
                 id="Language"
-                placeholder="What languages do your customers prefer?"
+                placeholder="Language We Should use?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
                 name="Uniqueness"
+                required
                 id="Uniqueness"
-                placeholder="What makes your business unique compared to competitors?"
+                placeholder="Unique Things About Your Business?"
                 className="border-b px-3 py-2 w-full my-2"
               />
               <input
                 type="text"
                 name="Competitior"
+                required
                 id="Competitior"
                 placeholder="Who is your biggest competitor?"
                 className="border-b px-3 py-2 w-full my-2"
@@ -261,7 +279,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <h3 className="text-lg font-semibold mt-2">
                 Do you serve areas outside your location?
               </h3>
-              <label htmlFor="ServeOutside" className="flex gap-x-6">
+              <label htmlFor="ServeOutside" required className="flex gap-x-6">
                 <div className="flex items-center gap-x-2">
                   <input
                     type="radio"
@@ -284,6 +302,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="Highlights"
+                required
                 id="Highlights"
                 placeholder="Is there anything specific you want to highlight about your business?"
                 className="border-b px-3 py-2 w-full my-2"
@@ -293,6 +312,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               </h2>
               <input
                 type="text"
+                required
                 name="FbNumber"
                 id="FbNumber"
                 placeholder="Personal Facebook ID/ Number"
@@ -301,6 +321,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="FbPasswords"
+                required
                 id="FbPasswords"
                 placeholder="Personal Facebook Password"
                 className="border-b px-3 py-2 w-full my-2"
@@ -308,6 +329,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="InstaNumber"
+                required
                 id="InstaNumber"
                 placeholder="Instagram ID/ Number"
                 className="border-b px-3 py-2 w-full my-2"
@@ -315,6 +337,7 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="InstaPasswords"
+                required
                 id="InstaPasswords"
                 placeholder="Instagram Password"
                 className="border-b px-3 py-2 w-full my-2"
@@ -322,8 +345,9 @@ const StepNine = ({ nextStep, prevStep, setSelection }) => {
               <input
                 type="text"
                 name="MailPassword"
+                required
                 id="MailPassword"
-                placeholder="Mail Password (Only fill if you want to register on Google)"
+                placeholder="Mail Password"
                 className="border-b px-3 py-2 w-full my-2"
               />
 
