@@ -24,7 +24,7 @@ function ContactSection() {
             <div className="w-[5%]">
               <img src={Email} alt="icon" />
             </div>
-            <div className="">contactyash2004@gmail.com</div>
+            <div className="">hello@yashsharmadigital.com</div>
           </div>
         </div>
       </div>
