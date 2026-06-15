@@ -23,14 +23,7 @@ function Footer() {
             })}
           </div>
           <div className="nav-links lg:w-1/3">
-            <div className="flex justify-center gap-5">
-              <Link to="/terms-and-conditions" className="border-r-2 pr-4 hover:text-red hover:border-r-2 hover:border-white">
-                <div>Terms &amp; Conditions</div>
-              </Link>
-              <Link to={'/privacy-policy'} className='hover:text-red'>
-                <div>Privacy Policy</div>
-              </Link>
-            </div>
+            <p>16, MADHAV PARK - 3, NEAR MADHAV SCHOOL, VASTRAL, AHMEDABAD</p>
           </div>
           <div className="copyright lg:w-1/3">
             <div className="upper flex gap-1 justify-center lg:justify-end">
